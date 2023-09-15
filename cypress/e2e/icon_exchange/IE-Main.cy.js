@@ -133,4 +133,31 @@ describe("let's Automate Icon Exchange.", function() {
   // Payment_Search()        //=============> Done
 
 
+  // IC_Notification()                  //=============> Done
+  // IC_Hours_Completion_Bonus()       //=============> Done
+  // IC_Performance_Bonus()           //=============> Done
+  // IC_Refferal_Bonus()             //=============> Done
+  // IC_Incentive()                 //=============> Done
+  // IC_Others_Bonus()             //=============> Done
+  // IC_Bonus_Condition()         //=============> Done
+
+  // Bulk_Facility_Assignment()       //=============> Done
+  // Bulk_add_provider()             //=============> Done
+  // Bulk_Area_of_expertise()       //=============> Done
+
+  
+
+
+
+//           ||///////     ||//////    ||\\    ||  ||///////
+//           ||       //   ||    ||    || \\   ||  ||
+//           ||        //  ||    ||    ||  \\  ||  ||/////
+//           ||       //   ||    ||    ||   \\ ||  ||
+//           ||//////      ||//////    ||    \\||  ||///////
+ 
+ 
+
+
+
 });
+
