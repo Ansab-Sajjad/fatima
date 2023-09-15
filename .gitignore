@@ -1,0 +1,12 @@
+# dependencies
+/node_modules
+package-lock.json
+cypress.config.js
+/cypress/fixtures/Fortra Data
+/cypress/fixtures/Fortra Credentials
+/cypress/e2e/Super Admin
+/cypress/screenshots/*.js
+/cypress/videos
+cypress/e2e/icon_exchange/test.html
+cypress/e2e/icon_exchange/Untitled-1.html
+cypress/e2e/icon_exchange/ads.html
