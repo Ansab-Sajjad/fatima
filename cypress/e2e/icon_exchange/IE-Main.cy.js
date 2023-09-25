@@ -76,8 +76,8 @@ describe("let's Automate Icon Exchange.", function() {
   // Provider_Login()        //=============> Done
 
   // Add_Provider()                           //=============> Done
-  // Provider_Search()                       //=============> Done
-  View_Provider()                        //=============> Done
+  Provider_Search()                       //=============> Done
+  // View_Provider()                        //=============> Done
   // Delete_Provider()                     //=============> Done
   // Assign_Facility()                    //=============> Done
   // Update_Provider_Provider_profile()  //=============> Done

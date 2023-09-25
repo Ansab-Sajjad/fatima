@@ -246,6 +246,27 @@ cy.get('[data-testid="clear"]').click({force:true})
 
 
 
+ it('Search by Notes.', () => {
+    cy.get('.left-icon').click({force: true})
+    cy.wait(2000)
+    cy.get('#notes').click().type("xyz")
+    cy.get('[data-testid="search"]').click({force: true})
+    
+    cy.wait(5000)
+ 
+   
+ 
+ });
+ 
+ it(' Clear Search filter.', () => {
+    cy.get('.left-icon').click({force: true})
+    cy.wait(2000)
+    cy.get('[data-testid="clear"]').click({force: true})
+    cy.wait(2000)
+ 
+ });
+
+
 
 
 
