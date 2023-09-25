@@ -66,24 +66,26 @@ import Timesheet_Search from "./Timesheet_Search.cy";
 import { Payment } from "./Payment.cy";
 import { Payment_Recalculate } from "./Payment_Recalculate.cy";
 import { Payment_Search } from "./Payment_Search.cy";
+import { Provider_profile } from "./Provider_profile.cy";
+import { Update_Provider_Provider_profile } from "./Update_Provider_Provider_profile.cy";
 
 describe("let's Automate Icon Exchange.", function() {
-  Icon_Exchange_URL();          //=============> Done
+  Icon_Exchange_URL();       //=============> Done
   Icon_Admin_Login()        //=============> Done
-  Icon_user_Login();       //=============> Done
-  Provider_Login()        //=============> Done
+  // Icon_user_Login();       //=============> Done
+  // Provider_Login()        //=============> Done
 
+  // Add_Provider()                           //=============> Done
+  // Provider_Search()                       //=============> Done
+  View_Provider()                        //=============> Done
+  // Delete_Provider()                     //=============> Done
+  // Assign_Facility()                    //=============> Done
+  // Update_Provider_Provider_profile()  //=============> Done
 
-  // Add_Provider()         //=============> Done
-  // Provider_Search()     //=============> Done
-  // View_Provider()      //=============> Done
-  // Delete_Provider()   //=============> Done
-  // Assign_Facility()  //=============> Done
-
-  // Add_Icon_Exchange_Facilities()   //=============> Done
-  // edit_facility()                 //=============> Done
-  // delete_facility()              //=============> Done
-  // Facility_Search()             //=============> Done
+  // Add_Icon_Exchange_Facilities()         //=============> Done
+  // edit_facility()                       //=============> Done
+  // delete_facility()                    //=============> Done
+  // Facility_Search()                   //=============> Done
 
   // Update_Icon_user()       //=============> Done
   // Icon_Users()            //=============> Done
