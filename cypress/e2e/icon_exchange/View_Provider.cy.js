@@ -30,6 +30,9 @@ function View_Provider(){
         cy.scrollTo("top").wait(2000)
         
     });
+    it('Verify that Notes are present.', () => {
+        cy.get('.col-md-11 > .mt-8').should('be.visible')
+    });
 
 // it('VP-6 Click on Documents button.', () => {
 //     cy.get('[data-testid="view-documents-tab"] > .tabname').click().wait(2000)
