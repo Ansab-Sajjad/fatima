@@ -97,9 +97,12 @@ it('Update Timesheet Approver Name.', () => {
 });
 
 it("Update Timesheet Approver's Email", () => {
-    cy.get('[name="contacts.0.contactEmail"]').clear().type("ansab@troontechnologies.com")
+    cy.get('[name="contacts.0.contactEmail"]').clear().type("ansab+" + Random_Textt() + "@troontechnologies.com")
 });
 
+it('Click on Second Primary Contact Button.', () => {
+    cy.get('[for="contacts.0.isPrimaryContact"]').click().wait(1000)
+});
 
 
 it('Click on Update Button.', () => {
