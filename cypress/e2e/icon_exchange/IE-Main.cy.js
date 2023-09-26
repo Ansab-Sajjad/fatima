@@ -79,10 +79,10 @@ describe("let's Automate Icon Exchange.", function() {
   // Provider_Search()                       //=============> Done
   // View_Provider()                        //=============> Done
   // Delete_Provider()                     //=============> Done
-  Assign_Facility()                    //=============> Done
+  // Assign_Facility()                    //=============> Done
   // Update_Provider_Provider_profile()  //=============> Done
 
-  // Add_Icon_Exchange_Facilities()         //=============> Done
+  Add_Icon_Exchange_Facilities()         //=============> Done
   // edit_facility()                       //=============> Done
   // delete_facility()                    //=============> Done
   // Facility_Search()                   //=============> Done
