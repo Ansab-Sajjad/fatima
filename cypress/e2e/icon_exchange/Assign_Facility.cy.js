@@ -62,19 +62,20 @@ it('VP-9 Add Facility Name', () => {
 });
 
 it('VP-10 Add Facility Contracted By.', () => {
-    cy.get('#contractedBy > .custom-select__control > .custom-select__value-container > .custom-select__input-container').type("Icon exchange").type('{enter}').wait(2000)
+    cy.get('#contractedBy > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true}).wait(2000)
+    cy.get('.custom-select__option:eq(0)').click().wait(100)
     expect(true).to.equal(true)
-
 });
 
 it('VP-11 Provider working for.', () => {
-    cy.get(':nth-child(3) > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__value-container > .custom-select__input-container').type("Icon exchange").type('{enter}').wait(2000)
+    cy.get('#workingFor > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true}).wait(1000)
+    cy.get('.custom-select__option:eq(0)').click().wait(100)
     expect(true).to.equal(true)
 
 });
 
 it('VP-12 Add Area Expertise', () => {
-    cy.get(':nth-child(4) > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click().wait(2000)
+    cy.get('#areaOfExpertise > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click().wait(2000)
     cy.get('.custom-select__option:eq(0)').click().wait(100)
     expect(true).to.equal(true)
 
@@ -145,9 +146,14 @@ it('VP- Malpractice Insurance', () => {
     cy.get('#malpracticeInsurance > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true})
     cy.get('.custom-select__option:eq(0)').click().wait(100)
     expect(true).to.equal(true)
-
 });
 
+
+    it('Select Director.', () => {
+        cy.get('#director > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true})
+    cy.get('.custom-select__option:eq(0)').click().wait(100)
+
+    });
 
 it('VP-Recruiter', () => {
     cy.get('#recruiter > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true})
@@ -157,14 +163,24 @@ it('VP-Recruiter', () => {
 });
 
 
-it('VP-Account Manager', () => {
-    cy.get('#accountManager > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true})
+it('VP-Recruiter Manager', () => {
+    cy.get('#recruiterManager > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true})
     cy.get('.custom-select__option:eq(0)').click().wait(100)
     expect(true).to.equal(true)
 
 });
 
+it('Select Marketer', () => {
+    cy.get('#marketer > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true})
+    cy.get('.custom-select__option:eq(0)').click().wait(100)
+    expect(true).to.equal(true)
+});
 
+it('Select Marketing Manager.', () => {
+    cy.get('#marketingManager > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true})
+    cy.get('.custom-select__option:eq(0)').click().wait(100)
+    expect(true).to.equal(true)
+});
 it('VP-Credentialing Coordinator', () => {
     cy.get('#credentialingCoordinator > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true})
     cy.get('.custom-select__option:eq(0)').click().wait(100)
@@ -172,6 +188,11 @@ it('VP-Credentialing Coordinator', () => {
 
 });
 
+it('Select Credentialing Coordinator.', () => {
+    cy.get('#credentialingCoordinator > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true})
+    cy.get('.custom-select__option:eq(0)').click().wait(100)
+    expect(true).to.equal(true)
+});
 
 it('VP-Client', () => {
     cy.get('#client > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true})
