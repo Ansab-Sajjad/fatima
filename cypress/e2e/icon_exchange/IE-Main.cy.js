@@ -83,7 +83,7 @@ describe("let's Automate Icon Exchange.", function() {
   // Update_Provider_Provider_profile()  //=============> Done
 
   // Add_Icon_Exchange_Facilities()         //=============> Done
-  edit_facility()                       //=============> Done
+  // edit_facility()                       //=============> Done
   // delete_facility()                    //=============> Done
   // Facility_Search()                   //=============> Done
 
@@ -99,7 +99,7 @@ describe("let's Automate Icon Exchange.", function() {
   // Provider_Signup()     //=============> Done
   // Provider_SignIN()    //=============> Done
 
-  // Add_Pay_Rates()           //=============> Done
+  Add_Pay_Rates()           //=============> Done
   // Pay_Rate_Search()        //=============> Done
   // Pay_Rate_View()         //=============> Done
   // Edit_Pay_Rate()        //=============> Done
