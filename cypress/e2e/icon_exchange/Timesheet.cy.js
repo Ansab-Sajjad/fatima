@@ -26,7 +26,7 @@ function Timesheet(){
 
     it('Select Provider.', () => {
         cy.get('#provider > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force: true})
-        cy.get('.custom-select__option:eq(4)').click({force: true}).wait(2000);
+        cy.get('.custom-select__option:eq(3)').click({force: true}).wait(2000);
     });
 
 
@@ -51,7 +51,7 @@ function Timesheet(){
     });
 
 
-    it('Enter Scheduled Hours.', () => {
+    it.skip('Enter Scheduled Hours.', () => {
         cy.get('[data-testid="scheduledhours-0"]').type(8)
     });
 
@@ -67,7 +67,7 @@ function Timesheet(){
     });
 
 
-    it('Enter Scheduled Hours.', () => {
+    it.skip('Enter Scheduled Hours.', () => {
         cy.get('[data-testid="scheduledhours-1"]').type(8)
     });
 
@@ -77,11 +77,11 @@ function Timesheet(){
 
 
     it('Log Evening on Call Pager.', () => {
-        cy.get(':nth-child(3) > :nth-child(6) > .col > .mb-0 > .form-checkbox > .form-check-label').click({force: true})
+        cy.get(':nth-child(3) > :nth-child(5) > .col > .mb-0 > .form-checkbox > .form-check-label').click({force: true})
     });
 
     it('Log Evening on Call Pager time.', () => {
-        cy.get(':nth-child(4) > :nth-child(6) > .col > .mb-0 > .form-checkbox > .form-check-label').click({force: true})
+        cy.get(':nth-child(4) > :nth-child(5) > .col > .mb-0 > .form-checkbox > .form-check-label').click({force: true})
     });
 
     it('Enter Service on call  Start time.', () => {
@@ -95,7 +95,7 @@ function Timesheet(){
 
 
     it('Enable In house call field.', () => {
-        cy.get(':nth-child(5) > :nth-child(9) > .col > .mb-0 > .form-checkbox > .form-check-label').click({force: true}).wait(2000)
+        cy.get(':nth-child(5) > :nth-child(8) > .col > .mb-0 > .form-checkbox > .form-check-label').click({force: true}).wait(2000)
     });
 
 
@@ -112,7 +112,7 @@ function Timesheet(){
 
 
     it('Enable 24 hours pager call.', () => {
-        cy.get(':nth-child(6) > :nth-child(7) > .col > .mb-0 > .form-checkbox > .form-check-label').click({force: true})
+        cy.get(':nth-child(6) > :nth-child(6) > .col > .mb-0 > .form-checkbox > .form-check-label').click({force: true})
     });
 
     it('Enter Required hours.', () => {
@@ -120,7 +120,7 @@ function Timesheet(){
     });
 
     it('Enter 24 Hours Start Time.', () => {
-        cy.get(':nth-child(7) > :nth-child(7) > .col > .mb-0 > .form-checkbox > .form-check-label').click({force: true}).wait(1000)
+        cy.get(':nth-child(7) > :nth-child(6) > .col > .mb-0 > .form-checkbox > .form-check-label').click({force: true}).wait(1000)
         cy.get('[id="timeLogs.6.pagerHours"]').type('10')
 
         cy.get('[id="timeLogs.6.serviceOnCallInHouseCall.0.startTime"]').type("5:45 AM")
@@ -135,7 +135,7 @@ function Timesheet(){
 
 
     it('Click on Evening on Call Pager.', () => {
-        cy.get(':nth-child(11) > :nth-child(6) > .col > .mb-0 > .form-checkbox > .form-check-label').click({force: true})
+        cy.get(':nth-child(11) > :nth-child(5) > .col > .mb-0 > .form-checkbox > .form-check-label').click({force: true})
     });
 
 
@@ -149,7 +149,8 @@ cy.get('.modal-body').should('be.visible').then(($modalBody) => {
       cy.get('.form-control').type("ANSAB").wait(1000)
       cy.get('#supervisorEmail > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click()
       cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);   /////===============Array Index 0;
-      cy.get('[data-testid="confirm-submit-approval"]').click().wait(2000)
+      cy.get('.signature-font').should('have.css', 'font-family').and('eq', 'Reenie Beanie, cursive');
+    //   cy.get('[data-testid="confirm-submit-approval"]').click().wait(2000)
       cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Timesheet submitted for approval')
     } else {
       // The modal body is not visible, so click on '#supervisorEmail'

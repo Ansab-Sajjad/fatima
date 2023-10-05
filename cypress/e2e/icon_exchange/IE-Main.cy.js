@@ -99,7 +99,7 @@ describe("let's Automate Icon Exchange.", function() {
   // Provider_Signup()     //=============> Done
   // Provider_SignIN()    //=============> Done
 
-  Add_Pay_Rates()           //=============> Done
+  // Add_Pay_Rates()           //=============> Done
   // Pay_Rate_Search()        //=============> Done
   // Pay_Rate_View()         //=============> Done
   // Edit_Pay_Rate()        //=============> Done
@@ -127,7 +127,7 @@ describe("let's Automate Icon Exchange.", function() {
   // Others_Bonus()          //=============> Done
 
   // Timesheet_Reminder()          //=============> Done
-  // Timesheet()                  //=============> Done
+  Timesheet()                  //=============> Done
   // Timesheet_Search()          //=============> Done
   // Pay_Periods()              //=============> Done
   // Payment()                 //=============> Done
