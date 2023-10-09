@@ -1,3 +1,5 @@
+import Random_Textt from "./Random_Text";
+
 function edit_facility() {
 
 
