@@ -70,7 +70,7 @@ it('Enter Phone Number.', () => {
     cy.get(':nth-child(1) > .form-group > .form-controls > .react-tel-input > .form-control').type(923483745911).wait(2000)
 });
 it('Enter Home Number.', () => {
-    cy.get(':nth-child(1) > .row > :nth-child(2) > .form-group > .form-controls > .react-tel-input > .form-control').clear().type(9234483745911).wait(2000)
+    cy.get(':nth-child(1) > .row > :nth-child(2) > .form-group > .form-controls > .react-tel-input > .form-control').clear().type(923483745911).wait(2000)
 });
 
 it('Enter Contact relationship.', () => {
