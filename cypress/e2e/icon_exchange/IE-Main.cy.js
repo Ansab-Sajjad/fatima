@@ -99,11 +99,11 @@ describe("let's Automate Icon Exchange.", function() {
   // Provider_Signup()     //=============> Done
   // Provider_SignIN()    //=============> Done
 
-  // Add_Pay_Rates()           //=============> Done
+  Add_Pay_Rates()           //=============> Done
   // Pay_Rate_Search()        //=============> Done
-  Pay_Rate_View()         //=============> Done
+  // Pay_Rate_View()         //=============> Done
   Edit_Pay_Rate()        //=============> Done
-  // Delete_Pay_Rate()     //=============> Done
+  Delete_Pay_Rate()     //=============> Done
 
   // Add_Malpractice()         //=============> Done
   // Malpractice_Search()     //=============> Done

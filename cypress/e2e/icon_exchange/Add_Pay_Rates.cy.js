@@ -71,7 +71,7 @@ function checkModalTextAndClick(index) {
 
 
 
-    ///////////////////////////////     Guaranteed Hours Daily  = OT After Hours Daily     ///////////////////////////////
+    ///////////////////////////////     Guaranteed Hours Daily  = OT After Hours Daily     /////////////////////////////// 
     it('Clear All values for Combinations Verifications', () => {
         cy.get('[data-testid="guaranteedHoursDaily"]').clear()
         cy.get('[data-testid="guaranteedHoursWeekly"]').clear()
