@@ -163,25 +163,60 @@ it('Verifying the Toast message.', () => {
 
 
 
-it('Add Notes for Provider.', () => {
-    cy.get('textarea').clear().type("name: xyz belong: ").type(Random_Textt())
+
+
+
+
+////////////////////////////////////////////
+
+it('Add Notes for Provider if exist.', () => {
+    cy.get('[data-testid="submit-approval"]').click().wait(2000)
+
+    // Check if the signature modal body is visible
+    cy.get('textarea').should('be.visible').then(($modalBody) => {
+if ($modalBody.length > 0) {
+  // The modal body is visible, so add signature on '.form-control'
+  cy.wait(1000).clear().type("name: xyz belong: ").type(Random_Textt())
+  cy.get('#left-tabs-example-tabpane-6 > form > .form-footer-full > .container > .row > .col-md-8 > [data-testid="savecontbtn"]').click({force:true}).wait(2000)
+  cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Profile has been updated successfully').wait(2000)
+  cy.get('.d-flex > .btn').click()
+} else {
+  // The modal body is not visible, so click on '#supervisorEmail'
+  cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Profile has been updated successfully')
+}
+});
 });
 
 
 
-it('Click on Save & contiunue button.', () => {
-    cy.get('#left-tabs-example-tabpane-6 > form > .form-footer-full > .container > .row > .col-md-8 > [data-testid="savecontbtn"]').click({force:true}).wait(2000)
-});
 
 
-it('Verifying the Toast message.', () => {
-    cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Profile has been updated successfully')
-    cy.wait(3000)
-});
 
-it('Click on Finish Button.', () => {
-    cy.get('.d-flex > .btn').click()
-});
+
+
+
+
+
+
+
+
+
+////////////////////////////////////
+
+
+// it('Click on Save & contiunue button.', () => {
+   
+// });
+
+
+// it('Verifying the Toast message.', () => {
+   
+//     cy.wait(3000)
+// });
+
+// it('Click on Finish Button.', () => {
+//     cy.get('.d-flex > .btn').click()
+// });
 
 
 }
