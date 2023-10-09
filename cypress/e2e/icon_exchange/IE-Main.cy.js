@@ -71,25 +71,25 @@ import { Update_Provider_Provider_profile } from "./Update_Provider_Provider_pro
 
 describe("let's Automate Icon Exchange.", function() {
   Icon_Exchange_URL();       //=============> Done
-  Icon_Admin_Login()        //=============> Done
-  // Icon_user_Login();       //=============> Done
+  // Icon_Admin_Login()        //=============> Done
+  Icon_user_Login();       //=============> Done
   // Provider_Login()        //=============> Done
 
   // Add_Provider()                           //=============> Done
   // Provider_Search()                       //=============> Done
   // View_Provider()                        //=============> Done
-  // Delete_Provider()                     //=============> Done
+  // Delete_Provider()                     //=============> Done        //=============> Not our Functionality Yet.
   // Assign_Facility()                    //=============> Done
   // Update_Provider_Provider_profile()  //=============> Done
 
   // Add_Icon_Exchange_Facilities()         //=============> Done
   // edit_facility()                       //=============> Done
-  // delete_facility()                    //=============> Done
+  // delete_facility()                    //=============> Done        //=============> Not our Functionality Yet.
   // Facility_Search()                   //=============> Done
 
   // Update_Icon_user()       //=============> Done
   // Icon_Users()            //=============> Done
-  // Icon_Users_Search()    //=============> Done
+  Icon_Users_Search()    //=============> Done
 
   // Create_Icon_Roles()      //=============> Done
   // Icon_Role_Search()      //=============> Done
@@ -127,7 +127,7 @@ describe("let's Automate Icon Exchange.", function() {
   // Others_Bonus()          //=============> Done
 
   // Timesheet_Reminder()          //=============> Done
-  Timesheet()                  //=============> Done
+  // Timesheet()                  //=============> Done
   // Timesheet_Search()          //=============> Done
   // Pay_Periods()              //=============> Done
   // Payment()                 //=============> Done
