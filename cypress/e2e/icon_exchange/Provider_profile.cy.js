@@ -1,7 +1,10 @@
 import Random_Textt from "./Random_Text";
 
 export function Provider_profile() {
-    
+    it('Click on Basic Info.', () => {
+        cy.wait(5000)
+        cy.get('[data-testid="basic-info-tab"] > .d-flex > .tabname').click().wait(1000)
+    });
 it('Upload profile image.', () => {
     cy.wait(3000)
 
@@ -28,6 +31,9 @@ it('F-14 Verifying the Toast message.', () => {
     cy.wait(2000)
 });
 
+it('Click on Address and Time Zone.', () => {
+    cy.get('[data-testid="address-timezone-tab"] > .d-flex > .tabname').click().wait(1000)
+});
 it('Select country', () => {
 
     cy.get('#countryMand > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force: true})
@@ -65,6 +71,9 @@ it('Select Time Zone.', () => {
 it('Click on Save and Continue button.', () => {
     cy.get('#left-tabs-example-tabpane-2 > form > .form-footer-full > .container > .row > .col-md-8 > [data-testid="savecontbtn"]').click()
 });
+it('click on Contact Information', () => {
+    cy.get('[data-testid="contact-info-tab"] > .d-flex > .tabname').click().wait(1000)
+});
 
 it('Enter Phone Number.', () => {
     cy.get(':nth-child(1) > .form-group > .form-controls > .react-tel-input > .form-control').type(923483745911).wait(2000)
@@ -93,6 +102,10 @@ it('Verifying the Toast message.', () => {
     cy.wait(2000);
     cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Profile has been updated successfully')
     cy.wait(2000)
+});
+
+it('Click on Area of Expertise.', () => {
+    cy.get('[data-testid="area-expertise-tab"] > .d-flex > .tabname').click().wait(1000)
 });
 
 it('Add area of experties.', () => {
@@ -133,6 +146,9 @@ it('Verifying the Toast message.', () => {
 //     cy.wait(3000)
 // });
 
+it('Click on Incorporated Status.', () => {
+    cy.get('[data-testid="incorporated-status-tab"] > .d-flex > .tabname').click().wait(1000)
+});
 it('Select Incorporated Status.', () => {
     cy.get('.radio-wrapper > :nth-child(2) > div > label.form-label').click({force:true}).wait(2000)
 });
@@ -170,12 +186,14 @@ it('Verifying the Toast message.', () => {
 ////////////////////////////////////////////
 
 it('Add Notes for Provider if exist.', () => {
-    cy.get('[data-testid="submit-approval"]').click().wait(2000)
+    // cy.get('[data-testid="submit-approval"]').click().wait(2000)
 
     // Check if the signature modal body is visible
-    cy.get('textarea').should('be.visible').then(($modalBody) => {
+    cy.get('[data-testid="icon-info-tab"] > .d-flex > .tabname').should('be.visible').then(($modalBody) => {
 if ($modalBody.length > 0) {
   // The modal body is visible, so add signature on '.form-control'
+  cy.wait(1000)
+  cy.get('textarea').click()
   cy.wait(1000).clear().type("name: xyz belong: ").type(Random_Textt())
   cy.get('#left-tabs-example-tabpane-6 > form > .form-footer-full > .container > .row > .col-md-8 > [data-testid="savecontbtn"]').click({force:true}).wait(2000)
   cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Profile has been updated successfully').wait(2000)
