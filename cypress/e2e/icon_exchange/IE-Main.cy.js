@@ -83,13 +83,13 @@ describe("let's Automate Icon Exchange.", function() {
   // Update_Provider_Provider_profile()  //=============> Done
 
   // Add_Icon_Exchange_Facilities()         //=============> Done
-  edit_facility()                       //=============> Done
-  // delete_facility()                    //=============> Done
+  // edit_facility()                       //=============> Done
+  // delete_facility()                    //=============> Done        //=============> Not our Functionality Yet.
   // Facility_Search()                   //=============> Done
 
   // Update_Icon_user()       //=============> Done
   // Icon_Users()            //=============> Done
-  // Icon_Users_Search()    //=============> Done
+  Icon_Users_Search()    //=============> Done
 
   // Create_Icon_Roles()      //=============> Done
   // Icon_Role_Search()      //=============> Done
