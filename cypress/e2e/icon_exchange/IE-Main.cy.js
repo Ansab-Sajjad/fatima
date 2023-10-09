@@ -89,7 +89,7 @@ describe("let's Automate Icon Exchange.", function() {
 
   // Update_Icon_user()       //=============> Done
   // Icon_Users()            //=============> Done
-  Icon_Users_Search()    //=============> Done
+  // Icon_Users_Search()    //=============> Done
 
   // Create_Icon_Roles()      //=============> Done
   // Icon_Role_Search()      //=============> Done
@@ -101,8 +101,8 @@ describe("let's Automate Icon Exchange.", function() {
 
   // Add_Pay_Rates()           //=============> Done
   // Pay_Rate_Search()        //=============> Done
-  // Pay_Rate_View()         //=============> Done
-  // Edit_Pay_Rate()        //=============> Done
+  Pay_Rate_View()         //=============> Done
+  Edit_Pay_Rate()        //=============> Done
   // Delete_Pay_Rate()     //=============> Done
 
   // Add_Malpractice()         //=============> Done
