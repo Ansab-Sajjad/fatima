@@ -58,6 +58,7 @@ function checkModalTextAndClick(index) {
 
    
     it('AP -6 Enter Rate Start Date.', () => {
+        cy.wait(3000)
         cy.get('#rateStartDate').click().type("09/11/2023").type('{enter}').wait(400)
     });
 

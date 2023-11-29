@@ -23,7 +23,7 @@ it('Click on Edit Info.', () => {
     cy.get('[data-testid="edit-info"]').click()
 });
 
-it('wait for few seconds', () => {
+it('Wait for few seconds', () => {
     cy.wait(3000)
     
 });

@@ -32,7 +32,7 @@ it('F-14 Verifying the Toast message.', () => {
 });
 
 it('Click on Address and Time Zone.', () => {
-    cy.get('[data-testid="address-timezone-tab"] > .d-flex > .tabname').click().wait(1000)
+    cy.get('[data-testid="address-timezone-tab"] > .d-flex > .tabname').click({force:true}).wait(1000)
 });
 it('Select country', () => {
 
@@ -55,7 +55,7 @@ it('Select City', () => {
 });
 
 it('Enter Postal code.', () => {
-    cy.get('#postalCodeMand').click({force:true}).type(Random_Textt())
+    cy.get('#postalCodeMand').click({force:true}).clear().type(Random_Textt())
 });
 
 it('Enter Distance.', () => {
@@ -114,6 +114,7 @@ it('Add area of experties.', () => {
     cy.get(':nth-child(1) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
     cy.get(':nth-child(1) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
     cy.get(':nth-child(3) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
+    cy.get(':nth-child(6) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
     cy.get(':nth-child(6) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
     cy.get(':nth-child(6) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
     cy.get(':nth-child(9) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
@@ -192,9 +193,12 @@ it('Add Notes for Provider if exist.', () => {
     cy.get('[data-testid="icon-info-tab"] > .d-flex > .tabname').should('be.visible').then(($modalBody) => {
 if ($modalBody.length > 0) {
   // The modal body is visible, so add signature on '.form-control'
+  cy.get('[data-testid="icon-info-tab"] > .d-flex > .tabname').click({force: true}).wait(3000)
   cy.wait(1000)
-  cy.get('textarea').click()
-  cy.wait(1000).clear().type("name: xyz belong: ").type(Random_Textt())
+  cy.get('textarea')
+  cy.wait(2000)
+//   cy.clear()
+  cy.type("name: xyz belong: ").type(Random_Textt())
   cy.get('#left-tabs-example-tabpane-6 > form > .form-footer-full > .container > .row > .col-md-8 > [data-testid="savecontbtn"]').click({force:true}).wait(2000)
   cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Profile has been updated successfully').wait(2000)
   cy.get('.d-flex > .btn').click()

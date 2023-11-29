@@ -71,8 +71,8 @@ import { Update_Provider_Provider_profile } from "./Update_Provider_Provider_pro
 
 describe("let's Automate Icon Exchange.", function() {
   Icon_Exchange_URL();       //=============> Done
-  // Icon_Admin_Login()        //=============> Done
-  Icon_user_Login();       //=============> Done
+  Icon_Admin_Login()        //=============> Done
+  // Icon_user_Login();       //=============> Done
   // Provider_Login()        //=============> Done
 
   // Add_Provider()                           //=============> Done
@@ -94,16 +94,16 @@ describe("let's Automate Icon Exchange.", function() {
   // Create_Icon_Roles()      //=============> Done
   // Icon_Role_Search()      //=============> Done
   // Edit_Roles()           //=============> Done
-  // Delete_Roles()        //=============> Done
+  // Delete_Roles()          //=============> Done
 
   // Provider_Signup()     //=============> Done
   // Provider_SignIN()    //=============> Done
 
-  Add_Pay_Rates()           //=============> Done
+  // Add_Pay_Rates()           //=============> Done
   // Pay_Rate_Search()        //=============> Done
   // Pay_Rate_View()         //=============> Done
-  Edit_Pay_Rate()        //=============> Done
-  Delete_Pay_Rate()     //=============> Done
+  // Edit_Pay_Rate()        //=============> Done
+  // Delete_Pay_Rate()     //=============> Done
 
   // Add_Malpractice()         //=============> Done
   // Malpractice_Search()     //=============> Done
@@ -127,7 +127,7 @@ describe("let's Automate Icon Exchange.", function() {
   // Others_Bonus()          //=============> Done
 
   // Timesheet_Reminder()          //=============> Done
-  // Timesheet()                  //=============> Done
+  Timesheet()                  //=============> Done
   // Timesheet_Search()          //=============> Done
   // Pay_Periods()              //=============> Done
   // Payment()                 //=============> Done
@@ -147,14 +147,26 @@ describe("let's Automate Icon Exchange.", function() {
   // Bulk_add_provider()             //=============> Done
   // Bulk_Area_of_expertise()       //=============> Done
 
+
+
+
+
+
+
+
+
+
+
+  
+
   
 
 
-//           ||///////     ||//////    ||\\    ||  ||///////
-//           ||       //   ||    ||    || \\   ||  ||
-//           ||        //  ||    ||    ||  \\  ||  ||/////
-//           ||       //   ||    ||    ||   \\ ||  ||
-//           ||//////      ||//////    ||    \\||  ||///////
+//           |||||||||     ||//////    ||\\    ||  ||///////
+//           ||       ||   ||    ||    || \\   ||  ||
+//           ||        |   ||    ||    ||  \\  ||  ||/////
+//           ||       ||   ||    ||    ||   \\ ||  ||
+//           |||||||||     ||//////    ||    \\||  ||///////
  
  
 

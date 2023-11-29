@@ -2,7 +2,7 @@ function Edit_Pay_Rate(){
 
     
   //===================> which list do you want to test.?
-  const index = 2;
+  const index = 1;
 
   it('AP -1 Click on Provider Rates.', () => {
     cy.get('[data-testid="mainmenu-providers"]').click()
@@ -172,7 +172,8 @@ function Edit_Pay_Rate(){
       cy.get('[data-testid="serviceOnCall.holidayServiceOnCallBillRate"]').clear().type('150').wait(400)
 
       cy.get('[data-testid="serviceOnCall.holidayServiceOnCallPayRate"]').clear().type('100').wait(400)
-
+      
+      cy.get('[data-testid="savebtn"]').click({force:true})
   
       cy.wait(1000);
       cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Pay rate has been updated successfully')
