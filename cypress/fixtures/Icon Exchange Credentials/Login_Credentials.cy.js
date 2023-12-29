@@ -19,7 +19,7 @@ export const Super_Admin_data = {
    }
 
    export const Provider_data = {
-    Provider_Email : "ansab+AT6@troontechnologies.com",
+    Provider_Email : "ansab+ATkk7@troontechnologies.com",
     Provider_Password: "Admin@2022"
    }
 

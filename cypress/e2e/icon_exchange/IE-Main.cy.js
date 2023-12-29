@@ -78,13 +78,13 @@ describe("let's Automate Icon Exchange.", function() {
   // Add_Provider()                           //=============> Done
   // Provider_Search()                       //=============> Done
   // View_Provider()                        //=============> Done
-  // Delete_Provider()                     //=============> Done
-  Assign_Facility()                    //=============> Done
+  // Delete_Provider()                     //=============> Done        //=============> Not our Functionality Yet.
+  // Assign_Facility()                    //=============> Done
   // Update_Provider_Provider_profile()  //=============> Done
 
   // Add_Icon_Exchange_Facilities()         //=============> Done
   // edit_facility()                       //=============> Done
-  // delete_facility()                    //=============> Done
+  // delete_facility()                    //=============> Done        //=============> Not our Functionality Yet.
   // Facility_Search()                   //=============> Done
 
   // Update_Icon_user()       //=============> Done
@@ -94,7 +94,7 @@ describe("let's Automate Icon Exchange.", function() {
   // Create_Icon_Roles()      //=============> Done
   // Icon_Role_Search()      //=============> Done
   // Edit_Roles()           //=============> Done
-  // Delete_Roles()        //=============> Done
+  // Delete_Roles()          //=============> Done
 
   // Provider_Signup()     //=============> Done
   // Provider_SignIN()    //=============> Done
@@ -127,7 +127,7 @@ describe("let's Automate Icon Exchange.", function() {
   // Others_Bonus()          //=============> Done
 
   // Timesheet_Reminder()          //=============> Done
-  // Timesheet()                  //=============> Done
+  Timesheet()                  //=============> Done
   // Timesheet_Search()          //=============> Done
   // Pay_Periods()              //=============> Done
   // Payment()                 //=============> Done
@@ -147,14 +147,26 @@ describe("let's Automate Icon Exchange.", function() {
   // Bulk_add_provider()             //=============> Done
   // Bulk_Area_of_expertise()       //=============> Done
 
+
+
+
+
+
+
+
+
+
+
+  
+
   
 
 
-//           ||///////     ||//////    ||\\    ||  ||///////
-//           ||       //   ||    ||    || \\   ||  ||
-//           ||        //  ||    ||    ||  \\  ||  ||/////
-//           ||       //   ||    ||    ||   \\ ||  ||
-//           ||//////      ||//////    ||    \\||  ||///////
+//           |||||||||     ||//////    ||\\    ||  ||///////
+//           ||       ||   ||    ||    || \\   ||  ||
+//           ||        |   ||    ||    ||  \\  ||  ||/////
+//           ||       ||   ||    ||    ||   \\ ||  ||
+//           |||||||||     ||//////    ||    \\||  ||///////
  
  
 

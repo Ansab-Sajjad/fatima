@@ -88,7 +88,7 @@ it('Add Bill Rate.', () => {
 });
 
 it('Add Timesheet Approver.', () => {
-    cy.get('[placeholder="Enter Timesheet Approver"]').clear().type("Muhammad Azlaan");
+    cy.get('[name="contacts.0.contactName"]').clear().type("Muhammad Azlaan");
 });
 
 it('Add Contact Email.', () => {
@@ -164,13 +164,30 @@ it('Add Contact Email.', () => {
     
 // });
 
+it('Click on Add More Button.', () => {
+    cy.get('[data-testid="addmorebtn"]').click().wait(1000)
+});
 
-it('F-13 Click on Created Button.', () => {
+
+it('Add Timesheet Approver.', () => {
+    cy.get('[name="contacts.1.contactName"]').clear().type("Ansab Sajjad");
+});
+
+it('Add Contact Email.', () => {
+    cy.get('[name="contacts.1.contactEmail"]').type("ansab+" + Random_Textt() + "@troontechnologies.com")
+});
+
+it('Click on Second Primary Contact Button.', () => {
+    cy.get('[for="contacts.1.isPrimaryContact"]').click().wait(1000)
+});
+
+it('Click on Created Button.', () => {
     cy.get('[data-testid="createbtn"]').click()
     cy.wait(1000)
     expect(true).to.equal(true)
  
 });
+
 
 it('F-14 Verifying the Toast message.', () => {
     cy.wait(2000);

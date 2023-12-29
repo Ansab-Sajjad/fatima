@@ -58,6 +58,7 @@ function checkModalTextAndClick(index) {
 
    
     it('AP -6 Enter Rate Start Date.', () => {
+        cy.wait(3000)
         cy.get('#rateStartDate').click().type("09/11/2023").type('{enter}').wait(400)
     });
 
@@ -65,18 +66,88 @@ function checkModalTextAndClick(index) {
         cy.get('#rateEndDate').click().type("10/10/2023").type('{enter}').wait(400)
     });
 
-    it('AP -8 Enter Guaranteed Hours.', () => {
-        cy.get('[data-testid="guaranteedHours"]').type("15").wait(400)
+
+    ///////////////////////////////     NEW CR      ///////////////////////////////
+
+
+
+
+    ///////////////////////////////     Guaranteed Hours Daily  = OT After Hours Daily     /////////////////////////////// 
+    it('Clear All values for Combinations Verifications', () => {
+        cy.get('[data-testid="guaranteedHoursDaily"]').clear()
+        cy.get('[data-testid="guaranteedHoursWeekly"]').clear()
+        cy.get('[data-testid="otAfterHoursDaily"]').clear()
+        cy.get('[data-testid="otAfterHoursWeekly"]').clear()
     });
 
- 
-    it('AP -10 Enter OT after hours Daily.', () => {
-        cy.get('[data-testid="otAfterHoursDaily"]').type("3").wait(400)
+
+    it('Enter Guaranteed Hours Daily.', () => {
+        cy.get('[data-testid="guaranteedHoursDaily"]').clear().type("25").wait(2000)
     });
 
-    it('AP -11 Enter OT After hours Weekly.', () => {
-        cy.get('[data-testid="otAfterHoursWeekly"]').type("10").wait(400)
+    it(' Enter OT after hours Daily.', () => {
+        cy.get('[data-testid="otAfterHoursDaily"]').clear().type("3").wait(2000)
     });
+
+
+
+        ///////////////////////////////    Guaranteed Hours weekly = OT After Hours weekly       ///////////////////////////////
+        it('Clear All values for Combinations Verifications', () => {
+            cy.get('[data-testid="guaranteedHoursDaily"]').clear()
+            cy.get('[data-testid="guaranteedHoursWeekly"]').clear()
+            cy.get('[data-testid="otAfterHoursDaily"]').clear()
+            cy.get('[data-testid="otAfterHoursWeekly"]').clear()
+        });
+
+        it('Enter Granteed Hours Weekly.', () => {
+            cy.get('[data-testid="guaranteedHoursWeekly"]').clear().type("15").wait(2000)
+        });
+
+        it(' Enter OT After hours Weekly.', () => {
+            cy.get('[data-testid="otAfterHoursWeekly"]').clear().type("10").wait(2000)
+        });
+
+        ///////////////////////////////     Guaranteed Hours Daily = OT After Hours weekly      ///////////////////////////////
+        it('Clear All values for Combinations Verifications', () => {
+            cy.get('[data-testid="guaranteedHoursDaily"]').clear()
+            cy.get('[data-testid="guaranteedHoursWeekly"]').clear()
+            cy.get('[data-testid="otAfterHoursDaily"]').clear()
+            cy.get('[data-testid="otAfterHoursWeekly"]').clear()
+        });
+
+        it('Enter Guaranteed Hours Daily.', () => {
+            cy.get('[data-testid="guaranteedHoursDaily"]').clear().type("25").wait(2000)
+        });
+    
+        it(' Enter OT After hours Weekly.', () => {
+            cy.get('[data-testid="otAfterHoursWeekly"]').clear().type("10").wait(2000)
+        });
+
+        ///////////////////////////////     Guaranteed Hours Daily  = OT After Hours Daily = OT After Hours weekly      ///////////////////////////////
+        it('Clear All values for Combinations Verifications', () => {
+            cy.get('[data-testid="guaranteedHoursDaily"]').clear()
+            cy.get('[data-testid="guaranteedHoursWeekly"]').clear()
+            cy.get('[data-testid="otAfterHoursDaily"]').clear()
+            cy.get('[data-testid="otAfterHoursWeekly"]').clear()
+        });
+
+        it('Enter Guaranteed Hours Daily.', () => {
+            cy.get('[data-testid="guaranteedHoursDaily"]').clear().type("25").wait(2000)
+        });
+    
+        it(' Enter OT after hours Daily.', () => {
+            cy.get('[data-testid="otAfterHoursDaily"]').clear().type("3").wait(2000)
+        });
+
+        it(' Enter OT After hours Weekly.', () => {
+            cy.get('[data-testid="otAfterHoursWeekly"]').clear().type("10").wait(2000)
+        });
+              
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+       
+      
+
+
 
     // =============================== Hourly =============================== \\
     
