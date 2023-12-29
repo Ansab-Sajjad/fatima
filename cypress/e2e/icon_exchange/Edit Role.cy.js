@@ -14,9 +14,9 @@ it('ER-2 Click on 3 dots.', () => {
 });
 
 it('ER-3 Click on Edit button', () => {
-    cy.contains('Edit').wait(1000).click({force:true});
+    cy.contains('Edit').wait(1000).click();
     cy.wait(2000)
-    // expect(true).to.equal(true)
+    expect(true).to.equal(true)
 
 });
 

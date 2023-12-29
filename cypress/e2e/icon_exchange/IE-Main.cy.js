@@ -68,23 +68,28 @@ import { Payment_Recalculate } from "./Payment_Recalculate.cy";
 import { Payment_Search } from "./Payment_Search.cy";
 import { Provider_profile } from "./Provider_profile.cy";
 import { Update_Provider_Provider_profile } from "./Update_Provider_Provider_profile.cy";
+import{Credentialing_Payor, Credentialing_Payor_Update} from "./Credentialing_Payor.cy";
+import Credenitialing_Payor_Search from "./Credentialing_Payor_Search.cy";
 
 describe("let's Automate Icon Exchange.", function() {
   Icon_Exchange_URL();       //=============> Done
-  Icon_Admin_Login()        //=============> Done
+  Icon_Admin_Login();        //=============> Done
+  //Credentialing_Payor();
+  //Credentialing_Payor_Update()
+  Credenitialing_Payor_Search()
   // Icon_user_Login();       //=============> Done
   // Provider_Login()        //=============> Done
 
   // Add_Provider()                           //=============> Done
   // Provider_Search()                       //=============> Done
   // View_Provider()                        //=============> Done
-  // Delete_Provider()                     //=============> Done        //=============> Not our Functionality Yet.
+  // Delete_Provider()                     //=============> Done
   // Assign_Facility()                    //=============> Done
   // Update_Provider_Provider_profile()  //=============> Done
 
   // Add_Icon_Exchange_Facilities()         //=============> Done
   // edit_facility()                       //=============> Done
-  // delete_facility()                    //=============> Done        //=============> Not our Functionality Yet.
+  // delete_facility()                    //=============> Done
   // Facility_Search()                   //=============> Done
 
   // Update_Icon_user()       //=============> Done
@@ -94,12 +99,12 @@ describe("let's Automate Icon Exchange.", function() {
   // Create_Icon_Roles()      //=============> Done
   // Icon_Role_Search()      //=============> Done
   // Edit_Roles()           //=============> Done
-  // Delete_Roles()          //=============> Done
+  // Delete_Roles()        //=============> Done
 
   // Provider_Signup()     //=============> Done
   // Provider_SignIN()    //=============> Done
 
-  // Add_Pay_Rates()           //=============> Done
+  //Add_Pay_Rates()           //=============> Done
   // Pay_Rate_Search()        //=============> Done
   // Pay_Rate_View()         //=============> Done
   // Edit_Pay_Rate()        //=============> Done
@@ -120,14 +125,14 @@ describe("let's Automate Icon Exchange.", function() {
   // Edit_Admin_Expense()             //=============> Done
   // admin_Expense_Condition()       //=============> Done
 
-  // Hours_Completion_Bonus()    //=============> Done
+ //Hours_Completion_Bonus()    //=============> Done
   // Performance_Bonus()        //=============> Done
   // Refferal_Bonus()          //=============> Done
   // Incentive()              //=============> Done
   // Others_Bonus()          //=============> Done
 
   // Timesheet_Reminder()          //=============> Done
-  Timesheet()                  //=============> Done
+  // Timesheet()                  //=============> Done
   // Timesheet_Search()          //=============> Done
   // Pay_Periods()              //=============> Done
   // Payment()                 //=============> Done
@@ -146,27 +151,15 @@ describe("let's Automate Icon Exchange.", function() {
   // Bulk_Facility_Assignment()       //=============> Done
   // Bulk_add_provider()             //=============> Done
   // Bulk_Area_of_expertise()       //=============> Done
-
-
-
-
-
-
-
-
-
-
-
-  
-
+   
   
 
 
-//           |||||||||     ||//////    ||\\    ||  ||///////
-//           ||       ||   ||    ||    || \\   ||  ||
-//           ||        |   ||    ||    ||  \\  ||  ||/////
-//           ||       ||   ||    ||    ||   \\ ||  ||
-//           |||||||||     ||//////    ||    \\||  ||///////
+//           ||///////     ||//////    ||\\    ||  ||///////
+//           ||       //   ||    ||    || \\   ||  ||
+//           ||        //  ||    ||    ||  \\  ||  ||/////
+//           ||       //   ||    ||    ||   \\ ||  ||
+//           ||//////      ||//////    ||    \\||  ||///////
  
  
 

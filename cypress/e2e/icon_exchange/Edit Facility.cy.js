@@ -1,5 +1,3 @@
-import Random_Textt from "./Random_Text";
-
 function edit_facility() {
 
 
@@ -21,7 +19,7 @@ function edit_facility() {
 
 
 
-it('Click on Edit button', () => {
+it('Click on View button', () => {
     cy.contains('Edit Info').click({force:true}).wait(3000);
     expect(true).to.equal(true)
 

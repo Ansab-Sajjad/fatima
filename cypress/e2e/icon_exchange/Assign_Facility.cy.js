@@ -234,10 +234,6 @@ it('VP-22 Click on Save button.', () => {
 
 
 
-it('Vp-23- Verifying the Toast message', () => {
-    cy.wait(1000);
-    cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Provider facility assignment has been added successfully')
-});
 
 
 

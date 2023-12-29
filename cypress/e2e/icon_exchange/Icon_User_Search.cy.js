@@ -32,7 +32,7 @@ it('Clear Filter.', () => {
 it('Search By Last Name.', () => {
     cy.get('.left-icon').click()
     cy.wait(2000)
-    cy.get('#lastName').click().type("Imtiaz")
+    cy.get('#lastName').click().type("imtiaz")
    cy.get('[data-testid="search"]').click({force:true})
     cy.wait(5000)
 

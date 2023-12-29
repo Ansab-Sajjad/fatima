@@ -19,7 +19,6 @@
   "homepage": "https://github.com/Ansab-Sajjad/Fortra-Automation#readme",
   "dependencies": {
     "cypress": "^10.10.0",
-    "cypress-file-upload": "^5.0.8",
-    "tesseract.js": "^5.0.3"
+    "cypress-file-upload": "^5.0.8"
   }
 }

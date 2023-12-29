@@ -12,7 +12,7 @@ it('Scroll to right.', () => {
 
 it('Check condition.', () => {
     
-  cy.get(':nth-child(1) > :nth-child(6) > .text-capitalize').then(($td) => {
+  cy.get(':nth-child(1) > :nth-child(5) > .text-capitalize').then(($td) => {
         const value = $td.text().trim();
         if (value === 'approved') {
           cy.wait(2000)

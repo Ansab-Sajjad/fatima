@@ -17,7 +17,7 @@ function Update_Icon_user() {
     });
 
        it('Click on update info button.', () => {
-        cy.get('[data-testid="editbtn"]').click().wait(4000)
+        cy.get('[data-testid="editbtn"]').click()
     });
 
 
