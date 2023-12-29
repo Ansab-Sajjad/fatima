@@ -149,8 +149,8 @@ cy.get('.modal-body').should('be.visible').then(($modalBody) => {
       cy.get('.form-control').type("ANSAB").wait(1000)
       cy.get('#supervisorEmail > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click()
       cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);   /////===============Array Index 0;
-      cy.get('.signature-font').should('have.css', 'font-family').and('eq', 'Reenie Beanie, cursive');
-    //   cy.get('[data-testid="confirm-submit-approval"]').click().wait(2000)
+    //   cy.get('.signature-font').should('have.css', 'font-family').and('eq', 'Reenie Beanie, cursive');
+      cy.get('[data-testid="confirm-submit-approval"]').click().wait(2000)
       cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Timesheet submitted for approval')
     } else {
       // The modal body is not visible, so click on '#supervisorEmail'

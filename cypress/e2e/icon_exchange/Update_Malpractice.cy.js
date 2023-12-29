@@ -101,7 +101,7 @@ function Update_Malpractice() {
 
   it("UM-7 Update Areas of Expertise.", () => {
     cy.get('[id="areaOfExpertise"]').click().wait(2000);
-    cy.get(".custom-select__option:eq(0)").click({ force: true }).wait(1000);
+    cy.get(".custom-select__option:eq(1)").click({ force: true }).wait(1000);
   });
 
   // it('UM-8 Update Division.', () => {
