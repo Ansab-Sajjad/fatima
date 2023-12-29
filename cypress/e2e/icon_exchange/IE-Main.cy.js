@@ -68,10 +68,15 @@ import { Payment_Recalculate } from "./Payment_Recalculate.cy";
 import { Payment_Search } from "./Payment_Search.cy";
 import { Provider_profile } from "./Provider_profile.cy";
 import { Update_Provider_Provider_profile } from "./Update_Provider_Provider_profile.cy";
+import{Credentialing_Payor, Credentialing_Payor_Update} from "./Credentialing_Payor.cy";
+import Credenitialing_Payor_Search from "./Credentialing_Payor_Search.cy";
 
 describe("let's Automate Icon Exchange.", function() {
   Icon_Exchange_URL();       //=============> Done
-  Icon_Admin_Login()        //=============> Done
+  Icon_Admin_Login();        //=============> Done
+  //Credentialing_Payor();
+  //Credentialing_Payor_Update()
+  Credenitialing_Payor_Search()
   // Icon_user_Login();       //=============> Done
   // Provider_Login()        //=============> Done
 
@@ -99,7 +104,7 @@ describe("let's Automate Icon Exchange.", function() {
   // Provider_Signup()     //=============> Done
   // Provider_SignIN()    //=============> Done
 
-  Add_Pay_Rates()           //=============> Done
+  //Add_Pay_Rates()           //=============> Done
   // Pay_Rate_Search()        //=============> Done
   // Pay_Rate_View()         //=============> Done
   // Edit_Pay_Rate()        //=============> Done
@@ -120,7 +125,7 @@ describe("let's Automate Icon Exchange.", function() {
   // Edit_Admin_Expense()             //=============> Done
   // admin_Expense_Condition()       //=============> Done
 
-  // Hours_Completion_Bonus()    //=============> Done
+ //Hours_Completion_Bonus()    //=============> Done
   // Performance_Bonus()        //=============> Done
   // Refferal_Bonus()          //=============> Done
   // Incentive()              //=============> Done
@@ -146,7 +151,7 @@ describe("let's Automate Icon Exchange.", function() {
   // Bulk_Facility_Assignment()       //=============> Done
   // Bulk_add_provider()             //=============> Done
   // Bulk_Area_of_expertise()       //=============> Done
-
+   
   
 
 
