@@ -23,9 +23,29 @@
    cy.get('.custom-select__option:eq(0)').click({force: true}).wait(3000)
 });
 
-it('Select a Type.', () => {
-   cy.get('#type > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true})
-   cy.get('.custom-select__option:eq(4)').click({force: true}).wait(3000)
+// it('Select a Type.', () => {
+//    cy.get('#type > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true})
+//    cy.get('.custom-select__option:eq(4)').click({force: true}).wait(3000)
+// });
+
+
+it('Select "Add new Category" from dropdown.', () => {
+  cy.get('#type > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({ force: true });
+
+  // Find the dropdown options and locate "Add new Category"
+  cy.get('.custom-select__option').contains('Add New').click({ force: true }).wait(3000);
 });
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
