@@ -16,7 +16,7 @@ import Add_Provider from "./Add_Provider.cy";
 import Provider_Search from "./Provider_Search.cy";
 import Delete_Provider from "./Delete_Provider.cy";
 import View_Provider from "./View_Provider.cy";
-import Assign_Facility from "./Assign_Facility.cy";
+import Assign_Facility, { Update_Assign_Facility, View_Assign_Facility } from "./Assign_Facility.cy";
 import Add_Pay_Rates from "./Add_Pay_Rates.cy";
 import Pay_Rate_Search from "./Pay_Rate_Search.cy";
 import Add_Malpractice from "./Add_Malpractice.cy";
@@ -68,15 +68,20 @@ import { Payment_Recalculate } from "./Payment_Recalculate.cy";
 import { Payment_Search } from "./Payment_Search.cy";
 import { Provider_profile } from "./Provider_profile.cy";
 import { Update_Provider_Provider_profile } from "./Update_Provider_Provider_profile.cy";
-import{Credentialing_Payor, Credentialing_Payor_Update} from "./Credentialing_Payor.cy";
-import Credenitialing_Payor_Search from "./Credentialing_Payor_Search.cy";
+import{Archived_Credentialing_Payor, Credentialing_Payor, Credentialing_Payor_Update, View_Credentialing_Payor} from "./Credentialing_Payor.cy";
+import{Credenitialing_Payor_Search} from "./Credentialing_Payor_Search.cy";
+import { Document_Types } from "./Document_Types.cy";
+
 
 describe("let's Automate Icon Exchange.", function() {
   Icon_Exchange_URL();       //=============> Done
   Icon_Admin_Login();        //=============> Done
   //Credentialing_Payor();
-  //Credentialing_Payor_Update()
-  Credenitialing_Payor_Search()
+  //Credentialing_Payor_Update();
+  //Credenitialing_Payor_Search();
+ //View_Credentialing_Payor();
+  //Archived_Credentialing_Payor();
+  Document_Types()
   // Icon_user_Login();       //=============> Done
   // Provider_Login()        //=============> Done
 
@@ -84,7 +89,9 @@ describe("let's Automate Icon Exchange.", function() {
   // Provider_Search()                       //=============> Done
   // View_Provider()                        //=============> Done
   // Delete_Provider()                     //=============> Done
-  // Assign_Facility()                    //=============> Done
+  //Assign_Facility();
+  //Update_Assign_Facility()   
+  //View_Assign_Facility()                  //=============> Done
   // Update_Provider_Provider_profile()  //=============> Done
 
   // Add_Icon_Exchange_Facilities()         //=============> Done

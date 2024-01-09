@@ -252,6 +252,112 @@ export function Credentialing_Payor_Update(){
             expect(text.trim()).to.equal('Credentialing and Payor has been updated successfully');
           });
     });
+
     
    
+}
+
+export function View_Credentialing_Payor(){
+
+    it('E-1 Click on Credentialing & Payor Menu.', () => {
+        cy.get('[data-testid="submenu-credentialing-pe"]').click({force:true})
+        cy.wait(4000)
+        expect(true).to.equal(true)
+    });
+
+    it('E-2 Click on 3 dots.', () => {
+        cy.get(':nth-child(5) > .stickycolumn > .table-dropdown > #dropdown-basic > .icon-Vertical-Dots').click({force:true}).wait(2000)
+    });
+
+    it('E-3 Click on View link', () => {
+        cy.get('#portal .table-dropdown .dropdown-item').contains('View').click({force:true})
+        
+    });
+   
+    it('E-4 - Provider Name', () => {
+        cy.get('.row > :nth-child(1) > .fs-14').should('be.visible');
+        
+    
+    });
+    
+    it('E-5 - Facility Name', () => {
+        cy.get('.row > :nth-child(3) > .fs-14').should('be.visible');
+        
+    
+    });
+    it('E-6 - Credentialing Coordinator', () => {
+        cy.get(':nth-child(8) > .fs-14').should('be.visible');
+        
+    
+    });
+    it('E-7 - Credentialing Year', () => {
+        cy.get(':nth-child(7) > .fs-14').should('be.visible');
+        
+    
+    });
+    it('E-8 - Payor Documents Sent For Providers Signatures', () => {
+        cy.get(':nth-child(24) > .fs-14').should('be.visible');
+        
+    
+    });
+    it('E-9 - Payor Enrollment Approval Status', () => {
+        cy.get(':nth-child(24) > .fs-14').should('be.visible');
+        
+    
+    });
+    it('E-10- Credentialing Type', () => {
+        cy.get(':nth-child(6) > .fs-14').should('be.visible');
+        
+    
+    });
+
+    it('E-11- Ok To Schedule', () => {
+        cy.get(':nth-child(19) > .fs-14').should('be.visible');
+        
+    
+    });
+
+    it('E-12- Received Facility’s Approval On', () => {
+        cy.get(':nth-child(18) > .fs-14').should('be.visible');
+        
+    
+    });
+
+    it('E-13- Application Sent for Contractors Review & Signature On', () => {
+        cy.get(':nth-child(14) > .fs-14').should('be.visible');
+        
+    
+    });
+
+    it('E-13- Payor Enrollment Assigned To', () => {
+        cy.get(':nth-child(32) > .fs-14').should('be.visible');
+        
+    
+    });
+}
+
+export function Archived_Credentialing_Payor(){
+
+    it('E-1 Click on Credentialing & Payor Menu.', () => {
+        cy.get('[data-testid="submenu-credentialing-pe"]').click({force:true})
+        cy.wait(4000)
+        expect(true).to.equal(true)
+    });
+
+    it('E-2 Click on 3 dots.', () => {
+        cy.get(':nth-child(5) > .stickycolumn > .table-dropdown > #dropdown-basic > .icon-Vertical-Dots').click({force:true}).wait(2000)
+    });
+
+       // Click on the "Archive" button
+    it('E-3 Click on Archived link', () => {
+        cy.get('#portal .table-dropdown .dropdown-item').contains('Archive').click({force:true}).wait(2000)
+        // Assert that the record is archived successfully
+        cy.contains('Your record has been archived successfully').should('be.visible');
+    });
+   
+    it('Search by View Archived Information.', () => {
+        cy.wait(4000)
+        cy.get('.left-icon').click({force: true})
+        cy.get('#archiveddocs').click({force:true}).wait(2000)
+       });
 }
