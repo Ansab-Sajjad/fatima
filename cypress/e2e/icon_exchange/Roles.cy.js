@@ -17,7 +17,7 @@ expect(true).to.equal(true)
 });
 
  it('R-3 Enter Role Name.', () => {
-    cy.get('.form-controls > input').type("ANSAB  " + Random_Textt(), {delay:150})
+    cy.get('.form-controls > input').type("Payroll Manager" + Random_Textt(), {delay:150})
  expect(true).to.equal(true)
 });
 

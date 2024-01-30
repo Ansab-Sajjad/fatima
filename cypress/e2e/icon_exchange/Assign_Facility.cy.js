@@ -2,12 +2,12 @@ import View_Provider from "./View_Provider.cy";
 
 export function Assign_Facility(){
 
-    it('VP-1 Click on provider.', () => {
-        cy.get('[data-testid="submenu-providers-listing"] > :nth-child(4)').click()
-        cy.wait(2000)
-        expect(true).to.equal(true)
+    // it('VP-1 Click on provider.', () => {
+    //     cy.get('[data-testid="submenu-providers-listing"] > :nth-child(4)').click()
+    //     cy.wait(2000)
+    //     expect(true).to.equal(true)
     
-    });
+    // });
     
     it('VP-2 Scroll to the right side.', () => {
         cy.get('.tableresponsive').scrollTo("right").wait(2000)
@@ -51,7 +51,7 @@ it('VP-9 Add Facility Name', () => {
    
     cy.get('#facility > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click().wait(2000)
     // cy.get('.custom-select__option:first').click().wait(100)
-    cy.get('.custom-select__option:eq(8)').click().wait(100)
+    cy.get('.custom-select__option:eq(16)').click().wait(100)
 
     expect(true).to.equal(true)
 
@@ -140,7 +140,7 @@ it('VP-21 Reoppoinment Date.', () => {
 
 it('VP- Should show date fields based on selected provider.', () => {
     cy.get('#malpracticeInsurance > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true})
-    cy.get('.custom-select__option:eq(1)').click().wait(100)
+    cy.get('.custom-select__option:eq(2)').click().wait(100)
     expect(true).to.equal(true)
     cy.get('#insuranceEffectiveStartDate').should('be.visible');
     cy.get('#insuranceEffectiveEndDate').should('be.visible');
@@ -246,7 +246,7 @@ it('VP-VMS Fee%', () => {
 
 
 it('VP-22 Click on Save button.', () => {
-    cy.get('[data-testid="createbtn"]').click({force:true}).wait(1000)
+    cy.get('[data-testid="createbtn"]').click({force:true}).wait(2000)
     expect(true).to.equal(true)
 
 });
@@ -254,25 +254,25 @@ it('VP-22 Click on Save button.', () => {
 
 export function Update_Assign_Facility(){
 
-    it('VP-1 Click on provider.', () => {
-        cy.get('[data-testid="submenu-providers-listing"] > :nth-child(2)').click()
-        cy.wait(2000)
-        expect(true).to.equal(true)
+    // it('VP-1 Click on provider.', () => {
+    //     cy.get('[data-testid="submenu-providers-listing"] > :nth-child(2)').click()
+    //     cy.wait(2000)
+    //     expect(true).to.equal(true)
     
-    });
+    // });
     
-    it('VP-2 Scroll to the right side.', () => {
-        cy.get('.tableresponsive').scrollTo("right").wait(2000)
-        expect(true).to.equal(true)
-    });
+    // it('VP-2 Scroll to the right side.', () => {
+    //     cy.get('.tableresponsive').scrollTo("right").wait(2000)
+    //     expect(true).to.equal(true)
+    // });
 
-    it('VP-3 Click on 3 dot button.', () => {
-       cy.get(':nth-child(4) > .stickycolumn > .table-dropdown > #dropdown-basic > .icon-Vertical-Dots').click({force:true})
-        expect(true).to.equal(true)
-    });
+    // it('VP-3 Click on 3 dot button.', () => {
+    //    cy.get(':nth-child(4) > .stickycolumn > .table-dropdown > #dropdown-basic > .icon-Vertical-Dots').click({force:true})
+    //     expect(true).to.equal(true)
+    // });
 
     it('VP-4 Click on View Provider button', () => {
-        cy.contains('View Provider').wait(1000).click();
+        cy.get('[data-testid="basic-info-tab"]').click()
         cy.wait(4000)
         expect(true).to.equal(true)
     });
@@ -301,13 +301,13 @@ it('E-3 Click on Edit link', () => {
 it('VP-9 Update Facility Name', () => {
    
     cy.get('#facility > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true}).wait(2000)
-    cy.get('.custom-select__option:eq(4)').click({force: true}).wait(3000)
+    cy.get('.custom-select__option:eq(18)').click({force: true}).wait(3000)
 
 });
 
 it('VP-10 Update Facility Contracted By.', () => {
     cy.get('#contractedBy > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true}).wait(2000)
-    cy.get('.custom-select__option:eq(1)').click().wait(100)
+    cy.get('.custom-select__option:eq(12)').click().wait(100)
     expect(true).to.equal(true)
 });
 
@@ -335,13 +335,13 @@ it('VP- Should show date fields based on selected provider.', () => {
 
 });
 it('VP - Insurance Effective Start Date', () => {
-    cy.get('#insuranceEffectiveStartDate').type("02/04/2023").type('{enter}').wait(2000)
+    cy.get('#insuranceEffectiveStartDate').type("02/04/2024").type('{enter}').wait(2000)
     expect(true).to.equal(true)
 
 });
 
 it('VP- Insurance Effective Start Date', () => {
-    cy.get('#insuranceEffectiveEndDate').type("03/04/2023").type('{enter}').wait(2000)
+    cy.get('#insuranceEffectiveEndDate').type("03/04/2024").type('{enter}').wait(2000)
     expect(true).to.equal(true)
 
 });

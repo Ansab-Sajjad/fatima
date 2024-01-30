@@ -21,7 +21,7 @@ it('ER-3 Click on Edit button', () => {
 });
 
 it('ER-4 Edit Role Name.', () => {
-    cy.get('.form-controls > input').clear().type("ANSAB")
+    cy.get('.form-controls > input').clear().type("Payroll Manager")
     expect(true).to.equal(true)
 
 });
@@ -35,6 +35,9 @@ it('ER-5 Edit Description.', () => {
 it('ER-6 Manage Permissions', () => {
     cy.get(':nth-child(3) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
     expect(true).to.equal(true)
+    cy.get(':nth-child(7) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
+    expect(true).to.equal(true)
+
 
 });
 
