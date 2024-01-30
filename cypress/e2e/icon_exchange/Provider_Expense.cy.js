@@ -17,14 +17,10 @@ function Provider_Expense(){
         cy.get('[data-testid="add-expense"]').click({force:true})
         cy.wait(5000)
     });
-it('Select Provider.', () => {
-    cy.get('#provider > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true}).wait(2000)
-    cy.get(".custom-select__option:eq(0)").click({ force: true }).wait(3000);  /////===============Array Index 0
 
-});
 
     it('EX- Select Facility  Name.', () => {
-        cy.get('#facility > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true}).wait(2000)
+        cy.get('.custom-select__input-container').click({force:true}).wait(2000)
         cy.get(".custom-select__option:eq(0)").click({ force: true }).wait(1000);  /////===============Array Index 0
 
     });

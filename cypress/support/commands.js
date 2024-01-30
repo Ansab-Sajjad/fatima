@@ -24,14 +24,3 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 import "cypress-file-upload";
-// commands.js
-const Tesseract = require('tesseract.js');
-
-Cypress.Commands.add('extractImageText', (imageUrl) => {
-  return new Promise((resolve) => {
-    Tesseract.recognize(imageUrl)
-      .then(({ data: { text } }) => {
-        resolve(text);
-      });
-  });
-});
