@@ -78,7 +78,7 @@ import {
   View_Credentialing_Payor,
 } from "./Credentialing_Payor.cy";
 import { Credenitialing_Payor_Search } from "./Credentialing_Payor_Search.cy";
-import { Delete_documentType, Document_Type_Update, Document_Types } from "./Document_Types.cy";
+import { Add_Document_Types, Delete_documentType, Document_Type_Update } from "./Document_Types.cy";
 import { Document_Type_Search } from "./Document_Type_Search.cy";
 import { Malpractice_Expire, View_malpractice_Expire } from "./Malpractice_Expire_Search.cy";
 import { Facility_Documents, Facility_Documents_Subfolder } from "./Facility_Documents.cy";
@@ -89,15 +89,15 @@ describe("let's Automate Icon Exchange.", function () {
 
   //================================================  Credenitialing and Payor ================================================//
 
-  Credentialing_Payor();            //=============> Done
-  Credentialing_Payor_Update();     //=============> Done
-  Credenitialing_Payor_Search();     //=============> Done
-  View_Credentialing_Payor();        //=============> Done
-  Archived_Credentialing_Payor();     //=============> Done
+  // Credentialing_Payor();            //=============> Done
+  // Credentialing_Payor_Update();     //=============> Done
+  // Credenitialing_Payor_Search();     //=============> Done
+  // View_Credentialing_Payor();        //=============> Done
+  // Archived_Credentialing_Payor();     //=============> Done
 
   //================================================ Document Types ================================================//
 
- //Document_Types();           //=============> Done
+  Add_Document_Types();           //=============> Done
   //Document_Type_Update()       //=============> Done
   //Document_Type_Search();       //=============> Done
   // Delete_documentType()      //=============> Done
