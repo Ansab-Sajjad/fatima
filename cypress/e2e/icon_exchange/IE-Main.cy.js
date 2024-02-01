@@ -86,6 +86,11 @@ import { Facility_Documents, Facility_Documents_Subfolder } from "./Facility_Doc
 describe("let's Automate Icon Exchange.", function () {
   Icon_Exchange_URL(); //=============> Done
   Icon_Admin_Login(); //=============> Done
+  // Provider_Signup()     //=============> Done
+  // Provider_SignIN()    //=============> Done
+   // Icon_user_Login();       //=============> Done
+  // Provider_Login();        //=============> Done
+
 
   //================================================  Credenitialing and Payor ================================================//
 
@@ -97,7 +102,7 @@ describe("let's Automate Icon Exchange.", function () {
 
   //================================================ Document Types ================================================//
 
-  Add_Document_Types();           //=============> Done
+  // Add_Document_Types();           //=============> Done
   //Document_Type_Update()       //=============> Done
   //Document_Type_Search();       //=============> Done
   // Delete_documentType()      //=============> Done
@@ -113,13 +118,6 @@ describe("let's Automate Icon Exchange.", function () {
   //Facility_Documents();           //=============> Done
   //Facility_Documents_Subfolder()
   
-
-
-  //================================================ Icon User and Provider Login ================================================//
-
-  // Icon_user_Login();       //=============> Done
-  // Provider_Login();        //=============> Done
-
   //================================================ Provider  ================================================//
 
   // Add_Provider() ;         //=============> Done
@@ -152,9 +150,6 @@ describe("let's Automate Icon Exchange.", function () {
   //Edit_Roles()           //=============> Done
   //Icon_Role_Search()      //=============> Done
   // Delete_Roles()        //=============> Done
-
-  // Provider_Signup()     //=============> Done
-  // Provider_SignIN()    //=============> Done
 
   //================================================ Pay Rates Management  ================================================//
 

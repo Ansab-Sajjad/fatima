@@ -1,7 +1,12 @@
 import Random_Textt from "./Random_Text";
 
 export function Provider_profile() {
-    
+  
+    it('Click on Basic Info.', () => {
+        cy.wait(5000)
+        cy.get('[data-testid="basic-info-tab"] > .d-flex > .tabname').click({force:true}).wait(2000)
+        cy.get('[data-testid="basic-info-tab"] > .d-flex > .tabname').click({force:true}).wait(2000)
+    });
 it('Upload profile image.', () => {
     cy.wait(3000)
 
@@ -19,13 +24,17 @@ it('Enter Date of birth.', () => {
 
 it('Click on Save and continue.', () => {
     cy.get('#left-tabs-example-tabpane-1 > form > .form-footer-full > .container > .row > .col-md-8 > [data-testid="savecontbtn"]').click({force: true})
+    cy.wait(4000);
 });
 
 
 it('F-14 Verifying the Toast message.', () => {
-    cy.wait(2000);
     cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Profile has been updated successfully')
     cy.wait(2000)
+});
+
+it('Click on Address and Time Zone tab.', () => {
+    cy.get('[data-testid="address-timezone-tab"] > .d-flex > .tabname').click({force:true}).wait(2000)
 });
 
 it('Select country', () => {
@@ -64,6 +73,11 @@ it('Select Time Zone.', () => {
 
 it('Click on Save and Continue button.', () => {
     cy.get('#left-tabs-example-tabpane-2 > form > .form-footer-full > .container > .row > .col-md-8 > [data-testid="savecontbtn"]').click()
+    cy.wait(4000);
+});
+
+it('click on Contact Information.', () => {
+    cy.get('[data-testid="contact-info-tab"] > .d-flex > .tabname').click({force:true}).wait(2000)
 });
 
 it('Enter Phone Number.', () => {
@@ -87,6 +101,7 @@ it('Enter Contact Number.', () => {
 
 it('Click on Save and continue.', () => {
     cy.get('#left-tabs-example-tabpane-3 > form > .form-footer-full > .container > .row > .col-md-8 > [data-testid="savecontbtn"]').click({force:true})
+    cy.wait(4000);
 });
 
 it('Verifying the Toast message.', () => {
@@ -95,25 +110,39 @@ it('Verifying the Toast message.', () => {
     cy.wait(2000)
 });
 
+it('Click on Area of Expertise.', () => {
+    cy.get('[data-testid="area-expertise-tab"] > .d-flex > .tabname').click({force:true}).wait(2000)
+});
+
 it('Add area of experties.', () => {
     cy.wait(2000)
-    cy.get(':nth-child(2) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
-    cy.get(':nth-child(1) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
-    cy.get(':nth-child(1) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
-    cy.get(':nth-child(3) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
-    cy.get(':nth-child(6) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
-    cy.get(':nth-child(6) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
-    cy.get(':nth-child(9) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
+    // cy.get(':nth-child(2) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
+    // cy.get(':nth-child(1) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
+    // cy.get(':nth-child(3) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
+    // cy.get(':nth-child(6) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
+    // cy.get(':nth-child(6) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
+    // cy.get(':nth-child(9) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
+
+    const checkbox = cy.get(':nth-child(1) > .form-checkbox > .form-check-label')
+// Check the current state of the checkbox
+checkbox.invoke('prop', 'checked').then((isChecked) => {
+    // If not ticked, tick the checkbox
+    if (!isChecked) {
+      checkbox.check();
+    }
+
+    // Verify that the checkbox is now ticked
+    checkbox.should('be.checked');
+  });
 });
 
 it('Click on save and continue.', () => {
     cy.get('.formstyle > .form-footer-full > .container > .row > .col-md-8 > [data-testid="savecontbtn"]').click({force:true})
-    cy.wait(2000)
+    cy.wait(4000)
 });
 
 
 it('Verifying the Toast message.', () => {
-    cy.wait(2000);
     cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Profile has been updated successfully')
     cy.wait(2000)
 });
@@ -132,6 +161,22 @@ it('Verifying the Toast message.', () => {
 //     cy.get('#left-tabs-example-tabpane-5 > .form-footer-full > .container > .row > .col-md-8 > .btn-text').click({force:true})
 //     cy.wait(3000)
 // });
+
+//====================================== Documents ======================================
+
+it('Click on Document.', () => {
+    cy.get('[data-testid="provider-general-documents"] > .d-flex > .tabname').click({force:true}).wait(2000)
+});
+
+it('', () => {
+    
+});
+//====================================== Incorporated Status ======================================
+
+
+it('Click on Incorporated Status', () => {
+    cy.get('[data-testid="incorporated-status-tab"] > .d-flex > .tabname').click({force:true}).wait(2000)
+});
 
 it('Select Incorporated Status.', () => {
     cy.get('.radio-wrapper > :nth-child(2) > div > label.form-label').click({force:true}).wait(2000)

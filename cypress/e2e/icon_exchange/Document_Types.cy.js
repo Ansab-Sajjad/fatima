@@ -83,7 +83,7 @@ export function Add_Document_Types() {
       .wait(1000);
     cy.get(".custom-select__option:eq(0)").click({ force: true }).wait(3000); // Selecting the first index which is already added with this upcoming combination.
     cy.get('[data-testid="subCategoryInputField"]')
-      .type("Life Support Training")
+      .type(Document_Type_data.Document_Sub_Category)
       .wait(1000);
     cy.get('[data-testid="saveCategory"]').click({ force: true });
 
@@ -106,7 +106,7 @@ export function Add_Document_Types() {
             .click({ force: true })
             .wait(3000); // Selecting the last added category.
           cy.get('[data-testid="subCategoryInputField"]')
-            .type("Life Support Training")
+            .type(Document_Type_data.Document_Sub_Category)
             .wait(1000);
           cy.get('[data-testid="saveCategory"]')
             .click({ force: true })
@@ -139,7 +139,7 @@ export function Add_Document_Types() {
       .click()
       .type("Basic (BLS)")
       .wait(3000);
-    cy.get('[data-testid="saveCategory"]').click({ force: true }).wait(3000);
+      cy.get('[data-testid="saveCategory"]').click({ force: true }).wait(3000);
   });
 
   //================================================ Select Area Of Expertise ================================================//
