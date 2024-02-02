@@ -85,11 +85,11 @@ import { Facility_Documents, Facility_Documents_Subfolder } from "./Facility_Doc
 
 describe("let's Automate Icon Exchange.", function () {
   Icon_Exchange_URL(); //=============> Done
-  Icon_Admin_Login(); //=============> Done
+  // Icon_Admin_Login(); //=============> Done
   // Provider_Signup()     //=============> Done
   // Provider_SignIN()    //=============> Done
    // Icon_user_Login();       //=============> Done
-  // Provider_Login();        //=============> Done
+  Provider_Login();        //=============> Done
 
 
   //================================================  Credenitialing and Payor ================================================//

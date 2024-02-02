@@ -93,13 +93,6 @@ it.skip('14- Verifying the Toast message for Successful Login (Skipped - not rec
 
 
 
-it('', () => {
-    cy.wait(2000)
-});
-
-it('', () => {
-    
-});
 
 
 } 
