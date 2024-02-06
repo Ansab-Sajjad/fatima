@@ -58,11 +58,11 @@ it('Select City', () => {
 });
 
 it('Enter Postal code.', () => {
-    cy.get('#postalCodeMand').click({force:true}).type(Random_Textt())
+    cy.get('#postalCodeMand').click({force:true}).clear().type(Random_Textt())
 });
 
 it('Enter Distance.', () => {
-    cy.get('#maxClientDistanceMand').click({force:true}).type("50")
+    cy.get('#maxClientDistanceMand').click({force:true}).clear().type("50")
 });
 
 it('Select Time Zone.', () => {
@@ -72,8 +72,8 @@ it('Select Time Zone.', () => {
 
 
 it('Click on Save and Continue button.', () => {
-    cy.get('#left-tabs-example-tabpane-2 > form > .form-footer-full > .container > .row > .col-md-8 > [data-testid="savecontbtn"]').click()
-    cy.wait(4000);
+    cy.get('#left-tabs-example-tabpane-2 > form > .form-footer-full > .container > .row > .col-md-8 > [data-testid="savecontbtn"]').click({force: true})
+    cy.wait(5000);
 });
 
 it('click on Contact Information.', () => {
@@ -117,23 +117,23 @@ it('Click on Area of Expertise.', () => {
 it('Add area of experties.', () => {
     cy.wait(2000)
     // cy.get(':nth-child(2) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
-    // cy.get(':nth-child(1) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
+    cy.get(':nth-child(10) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
     // cy.get(':nth-child(3) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
     // cy.get(':nth-child(6) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
     // cy.get(':nth-child(6) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
     // cy.get(':nth-child(9) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
 
-    const checkbox = cy.get(':nth-child(1) > .form-checkbox > .form-check-label')
-// Check the current state of the checkbox
-checkbox.invoke('prop', 'checked').then((isChecked) => {
-    // If not ticked, tick the checkbox
-    if (!isChecked) {
-      checkbox.check();
-    }
+//     const checkbox = cy.get(':nth-child(1) > .form-checkbox > .form-check-label')
+// // Check the current state of the checkbox
+// checkbox.invoke('prop', 'checked').then((isChecked) => {
+//     // If not ticked, tick the checkbox
+//     if (!isChecked) {
+//       checkbox.check();
+//     }
 
-    // Verify that the checkbox is now ticked
-    checkbox.should('be.checked');
-  });
+//     // Verify that the checkbox is now ticked
+//     checkbox.should('be.checked');
+//   });
 });
 
 it('Click on save and continue.', () => {
@@ -165,12 +165,39 @@ it('Verifying the Toast message.', () => {
 //====================================== Documents ======================================
 
 it('Click on Document.', () => {
-    cy.get('[data-testid="provider-general-documents"] > .d-flex > .tabname').click({force:true}).wait(2000)
+    cy.get('[data-testid="provider-general-documents"] > .d-flex > .tabname').click({force:true}).wait(4000)
+});
+
+it('Click on Sub category button.', () => {
+    cy.get('.accordion-button').click({force:true}).wait(3000)
+});
+
+it('Click on Type button.', () => {
+    cy.get('.form-group > .form-checkbox > .form-check-label').click({force:true}).wait(3000)
+});
+
+it('Enter title for the document type.', () => {
+    cy.get('[placeholder="Title"]').click({force:true}).clear().type("This is auto generated title.").wait(1000)
+});
+
+it('Upload document Type Attachement.', () => {
+    cy.wait(3000)
+
+    const filepath12 = "a11.jpg"
+    cy.get('[data-testid="browsebtn"]').attachFile(filepath12, { subjectType: 'drag-n-drop' })
+    cy.wait(5000)
+
+});
+
+it('Enter End date.', () => {
+cy.get('[placeholder="End Date"]').click({force:true}).clear().type("02/15/2024").wait(1000)
 });
 
 it('', () => {
     
 });
+
+
 //====================================== Incorporated Status ======================================
 
 

@@ -82,14 +82,25 @@ import { Add_Document_Types, Delete_documentType, Document_Type_Update } from ".
 import { Document_Type_Search } from "./Document_Type_Search.cy";
 import { Malpractice_Expire, View_malpractice_Expire } from "./Malpractice_Expire_Search.cy";
 import { Facility_Documents, Facility_Documents_Subfolder } from "./Facility_Documents.cy";
+import { Archive_Folder, Archive_Sub_Folder, Document_Folder_Search, Document_Sub_Folder_Search, Reinstate_Folder, Reinstate_Sub_Folder } from "./Document_Folder.cy";
+
 
 describe("let's Automate Icon Exchange.", function () {
   Icon_Exchange_URL(); //=============> Done
-  // Icon_Admin_Login(); //=============> Done
+  Icon_Admin_Login(); //=============> Done
   // Provider_Signup()     //=============> Done
   // Provider_SignIN()    //=============> Done
    // Icon_user_Login();       //=============> Done
-  Provider_Login();        //=============> Done
+  // Provider_Login();        //=============> Done
+
+  //================================================  Document ================================================//
+
+  Document_Folder_Search()
+  Document_Sub_Folder_Search()
+  Archive_Folder()
+  Archive_Sub_Folder()
+  Reinstate_Folder()
+  Reinstate_Sub_Folder()
 
 
   //================================================  Credenitialing and Payor ================================================//
@@ -104,7 +115,7 @@ describe("let's Automate Icon Exchange.", function () {
 
   // Add_Document_Types();           //=============> Done
   //Document_Type_Update()       //=============> Done
-  //Document_Type_Search();       //=============> Done
+  // Document_Type_Search();       //=============> Done
   // Delete_documentType()      //=============> Done
 
     //================================================ Expired Malpractice ================================================//
