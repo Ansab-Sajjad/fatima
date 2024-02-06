@@ -93,13 +93,13 @@ describe("let's Automate Icon Exchange.", function () {
    // Icon_user_Login();       //=============> Done
   // Provider_Login();        //=============> Done
 
-  //================================================  Document ================================================//
+  //================================================  Document > Facilities ================================================//
 
-  Document_Folder_Search()
-  Document_Sub_Folder_Search()
-  Archive_Folder()
-  Archive_Sub_Folder()
-  Reinstate_Folder()
+  // Document_Folder_Search()
+  // Document_Sub_Folder_Search()
+  // Archive_Folder()
+  // Archive_Sub_Folder()
+  // Reinstate_Folder()
   Reinstate_Sub_Folder()
 
 
