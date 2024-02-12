@@ -87,11 +87,11 @@ import { Archive_Folder, Archive_Sub_Folder, Document_Folder_Search, Document_Su
 
 describe("let's Automate Icon Exchange.", function () {
   Icon_Exchange_URL(); //=============> Done
-  Icon_Admin_Login(); //=============> Done
+  // Icon_Admin_Login(); //=============> Done
   // Provider_Signup()     //=============> Done
   // Provider_SignIN()    //=============> Done
-   // Icon_user_Login();       //=============> Done
-  // Provider_Login();        //=============> Done
+  // Icon_user_Login();       //=============> Done
+  Provider_Login();        //=============> Done
 
   //================================================  Document > Facilities ================================================//
 
@@ -100,7 +100,7 @@ describe("let's Automate Icon Exchange.", function () {
   // Archive_Folder()
   // Archive_Sub_Folder()
   // Reinstate_Folder()
-  Reinstate_Sub_Folder()
+  // Reinstate_Sub_Folder()
 
 
   //================================================  Credenitialing and Payor ================================================//
@@ -114,7 +114,7 @@ describe("let's Automate Icon Exchange.", function () {
   //================================================ Document Types ================================================//
 
   // Add_Document_Types();           //=============> Done
-  //Document_Type_Update()       //=============> Done
+  // Document_Type_Update()       //=============> Done
   // Document_Type_Search();       //=============> Done
   // Delete_documentType()      //=============> Done
 

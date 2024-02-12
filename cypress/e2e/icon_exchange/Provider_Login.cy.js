@@ -30,7 +30,7 @@ function Provider_Login(){
     
     it('12- Click on Sign In Button.', () => {
         cy.get('.btn').click({force:true})
-        cy.wait(4000)
+        cy.wait(8000)
         expect(true).to.equal(true)
     });
     
@@ -46,19 +46,37 @@ function Provider_Login(){
 
 
     
-    it("Clicks button or image based on condition", () => {
-        cy.get(
-          '#left-tabs-example-tabpane-5 > :nth-child(1) > form > .form-footer-full > .container > .row > .col-md-4 > .btn',
-          { timeout: 10000 }
-        ).then(($button) => {
-          if ($button.length > 0) {
-            // If the first button is found, click on it
-            cy.wrap($button).click();
-          } else {
-            // If the first button is not found, click on the second button
-            cy.get(".brand-link > img").click();
-          }
-        });
-      });
+    // it("Clicks button or image based on condition", () => {
+    //     cy.get(
+    //       '#left-tabs-example-tabpane-5 > :nth-child(1) > form > .form-footer-full > .container > .row > .col-md-4 > .btn',
+    //       { timeout: 10000 }
+    //     ).then(($button) => {
+    //       if ($button.length > 0) {
+    //         // If the first button is found, click on it
+    //         cy.wrap($button).click();
+    //       } else {
+    //         // If the first button is not found, click on the second button
+    //         cy.get(".brand-link > img").click();
+    //       }
+    //     });
+    //   });
+
+
+    it('Check if Complete Profile Later Exist.', () => {
+        
+        
+        // Check if the signature modal body is visible
+        cy.get('#left-tabs-example-tabpane-5 > .form-footer-full > .container > .row > .col-md-4').should('be.visible').then(($modalBody) => {
+    if ($modalBody.length > 0) {
+      // The modal body is visible, so add signature on '.form-control'
+      cy.get('#left-tabs-example-tabpane-5 > .form-footer-full > .container > .row > .col-md-4 > .btn').click().wait(2000)
+    } else {
+      // The modal body is not visible, so click on '#supervisorEmail'
+              cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Login Successful')
+
+    }
+  });
+    });
+
 }
 export default Provider_Login;

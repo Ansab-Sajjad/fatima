@@ -223,7 +223,7 @@ it('Are you currently, or will you be providing services for any of the followin
 
 
 it('Click on Save & contiunue button.', () => {
-    cy.get('#left-tabs-example-tabpane-5 > :nth-child(1) > form > .form-footer-full > .container > .row > .col-md-8 > [data-testid="savecontbtn"]').click({force:true}).wait(2000)
+    cy.get('#left-tabs-example-tabpane-6 > :nth-child(1) > form > .form-footer-full > .container > .row > .col-md-8 > [data-testid="savecontbtn"]').click({force:true}).wait(2000)
 });
 
 
