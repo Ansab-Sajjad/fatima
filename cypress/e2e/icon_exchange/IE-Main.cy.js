@@ -81,17 +81,18 @@ import { Credenitialing_Payor_Search } from "./Credentialing_Payor_Search.cy";
 import { Add_Document_Types, Delete_documentType, Document_Type_Update } from "./Document_Types.cy";
 import { Document_Type_Search } from "./Document_Type_Search.cy";
 import { Malpractice_Expire, View_malpractice_Expire } from "./Malpractice_Expire_Search.cy";
-import { Facility_Documents, Facility_Documents_Subfolder } from "./Facility_Documents.cy";
+import { Facility_Document_Search, Facility_Documents, Facility_Documents_Subfolder } from "./Facility_Documents.cy";
 import { Archive_Folder, Archive_Sub_Folder, Document_Folder_Search, Document_Sub_Folder_Search, Reinstate_Folder, Reinstate_Sub_Folder } from "./Document_Folder.cy";
+import { Provider_Genral_Docuemnt_Search } from "./Provider_General_Docuemnt_Search.cy";
 
 
 describe("let's Automate Icon Exchange.", function () {
   Icon_Exchange_URL(); //=============> Done
-  Icon_Admin_Login(); //=============> Done
+  //Icon_Admin_Login(); //=============> Done
   // Provider_Signup()     //=============> Done
   // Provider_SignIN()    //=============> Done
    // Icon_user_Login();       //=============> Done
-  // Provider_Login();        //=============> Done
+  Provider_Login();        //=============> Done
 
   //================================================  Document > Facilities ================================================//
 
@@ -100,7 +101,7 @@ describe("let's Automate Icon Exchange.", function () {
   // Archive_Folder()
   // Archive_Sub_Folder()
   // Reinstate_Folder()
-  Reinstate_Sub_Folder()
+  //Reinstate_Sub_Folder()
 
 
   //================================================  Credenitialing and Payor ================================================//
@@ -128,6 +129,8 @@ describe("let's Automate Icon Exchange.", function () {
 
   //Facility_Documents();           //=============> Done
   //Facility_Documents_Subfolder()
+  //Provider_Genral_Docuemnt_Search()
+  Facility_Document_Search()
   
   //================================================ Provider  ================================================//
 
@@ -220,7 +223,7 @@ describe("let's Automate Icon Exchange.", function () {
   // Bulk_Area_of_expertise()       //=============> Done
 
  
-});
+}); 
 
   //           |||||||||     ||||||||    ||\\    ||  ||||||||
   //           ||      \\    ||    ||    || \\   ||  ||
