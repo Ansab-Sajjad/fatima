@@ -30,7 +30,7 @@ function Provider_Login(){
     
     it('12- Click on Sign In Button.', () => {
         cy.get('.btn').click({force:true})
-        cy.wait(4000)
+        cy.wait(8000)
         expect(true).to.equal(true)
     });
 
@@ -46,6 +46,12 @@ function Provider_Login(){
     //     cy.wait(2000)
     // });
 
+  
+
+
+
+
+    
     // it("Clicks button or image based on condition", () => {
     //     cy.get(
     //       '#left-tabs-example-tabpane-5 > :nth-child(1) > form > .form-footer-full > .container > .row > .col-md-4 > .btn',
@@ -60,5 +66,5 @@ function Provider_Login(){
     //       }
     //     });
     //   });
-}
+  }
 export default Provider_Login;

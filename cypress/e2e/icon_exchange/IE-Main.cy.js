@@ -16,7 +16,8 @@ import Add_Provider from "./Add_Provider.cy";
 import Provider_Search from "./Provider_Search.cy";
 import Delete_Provider from "./Delete_Provider.cy";
 import View_Provider from "./View_Provider.cy";
-import {Assign_Facility, 
+import {
+  Assign_Facility,
   Update_Assign_Facility,
   View_Assign_Facility,
 } from "./Assign_Facility.cy";
@@ -78,22 +79,40 @@ import {
   View_Credentialing_Payor,
 } from "./Credentialing_Payor.cy";
 import { Credenitialing_Payor_Search } from "./Credentialing_Payor_Search.cy";
-import { Add_Document_Types, Delete_documentType, Document_Type_Update } from "./Document_Types.cy";
+import {
+  Add_Document_Types,
+  Delete_documentType,
+  Document_Type_Update,
+} from "./Document_Types.cy";
 import { Document_Type_Search } from "./Document_Type_Search.cy";
-import { Malpractice_Expire, View_malpractice_Expire } from "./Malpractice_Expire_Search.cy";
-import { Delete_Facility_Folder, Facility_Document_Search, Facility_Documents, Facility_Documents_Subfolder, Rename_Facility_Folder, Rename_Facility_subFolder } from "./Facility_Documents.cy";
-import { Archive_Folder, Archive_Sub_Folder, Document_Folder_Search, Document_Sub_Folder_Search, Reinstate_Folder, Reinstate_Sub_Folder } from "./Document_Folder.cy";
-import { Provider_Genral_Docuemnt_Search } from "./Provider_General_Docuemnt_Search.cy";
-import { Provider_Document_Folder_Search, Provider_Document_Search } from "./Provider_Documents.cy";
-
+import {
+  Malpractice_Expire,
+  View_malpractice_Expire,
+} from "./Malpractice_Expire_Search.cy";
+import {
+  Facility_Documents,
+  Facility_Documents_Subfolder,
+} from "./Facility_Documents.cy";
+import {
+  Archive_Folder,
+  Archive_Sub_Folder,
+  Document_Folder_Search,
+  Document_Sub_Folder_Search,
+  Reinstate_Folder,
+  Reinstate_Sub_Folder,
+} from "./Document_Folder.cy";
+import {
+  Provider_Document_Folder_Search,
+  Provider_Document_Sub_Folder_Search,
+} from "./Provider_Documents.cy";
 
 describe("let's Automate Icon Exchange.", function () {
   Icon_Exchange_URL(); //=============> Done
-  Icon_Admin_Login(); //=============> Done
+  // Icon_Admin_Login(); //=============> Done
   // Provider_Signup()     //=============> Done
   // Provider_SignIN()    //=============> Done
-   //Icon_user_Login();       //=============> Done
-  //Provider_Login();        //=============> Done
+  // Icon_user_Login();       //=============> Done
+  // Provider_Login();        //=============> Done
 
   //================================================  Document > Facilities ================================================//
 
@@ -102,8 +121,9 @@ describe("let's Automate Icon Exchange.", function () {
   // Archive_Folder()
   // Archive_Sub_Folder()
   // Reinstate_Folder()
-  //Reinstate_Sub_Folder()
-
+  // Reinstate_Sub_Folder()
+  Provider_Document_Folder_Search()
+  Provider_Document_Sub_Folder_Search();
 
   //================================================  Credenitialing and Payor ================================================//
 
@@ -116,15 +136,14 @@ describe("let's Automate Icon Exchange.", function () {
   //================================================ Document Types ================================================//
 
   // Add_Document_Types();           //=============> Done
-  //Document_Type_Update()       //=============> Done
+  // Document_Type_Update()       //=============> Done
   // Document_Type_Search();       //=============> Done
   // Delete_documentType()      //=============> Done
 
-    //================================================ Expired Malpractice ================================================//
+  //================================================ Expired Malpractice ================================================//
 
   //Malpractice_Expire();           //=============> Done
   //View_malpractice_Expire()       //=============> Done
-
 
   //================================================ Facility Folders ================================================//
 
@@ -230,12 +249,10 @@ Provider_Document_Folder_Search()
   // Bulk_Facility_Assignment()       //=============> Done
   // Bulk_add_provider()             //=============> Done
   // Bulk_Area_of_expertise()       //=============> Done
+});
 
- 
-}); 
-
-  //           |||||||||     ||||||||    ||\\    ||  ||||||||
-  //           ||      \\    ||    ||    || \\   ||  ||
-  //           ||       ||   ||    ||    ||  \\  ||  ||/////
-  //           ||      //    ||    ||    ||   \\ ||  ||
-  //           |||||||||     ||||||||    ||    \\||  ||||||||
+//           |||||||||     ||||||||    ||\\    ||  ||||||||
+//           ||      \\    ||    ||    || \\   ||  ||
+//           ||       ||   ||    ||    ||  \\  ||  ||/////
+//           ||      //    ||    ||    ||   \\ ||  ||
+//           |||||||||     ||||||||    ||    \\||  ||||||||

@@ -1,7 +1,7 @@
 import { Document_Type_data } from "./Document_Type_Data.cy";
 
 export function Add_Document_Types() {
-  it("Click on Document type.", () => {
+  it("Click on Setting.", () => {
     cy.get('[data-testid="mainmenu-settings"] > .float-end').click({
       force: true,
     });
