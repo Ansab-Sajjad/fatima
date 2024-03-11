@@ -16,7 +16,8 @@ import Add_Provider from "./Add_Provider.cy";
 import Provider_Search from "./Provider_Search.cy";
 import Delete_Provider from "./Delete_Provider.cy";
 import View_Provider from "./View_Provider.cy";
-import {Assign_Facility, 
+import {
+  Assign_Facility,
   Update_Assign_Facility,
   View_Assign_Facility,
 } from "./Assign_Facility.cy";
@@ -78,47 +79,86 @@ import {
   View_Credentialing_Payor,
 } from "./Credentialing_Payor.cy";
 import { Credenitialing_Payor_Search } from "./Credentialing_Payor_Search.cy";
-import { Delete_documentType, Document_Type_Update, Document_Types } from "./Document_Types.cy";
+import {
+  Add_Document_Types,
+  Delete_documentType,
+  Document_Type_Update,
+} from "./Document_Types.cy";
 import { Document_Type_Search } from "./Document_Type_Search.cy";
-import { Malpractice_Expire, View_malpractice_Expire } from "./Malpractice_Expire_Search.cy";
-import { Facility_Documents, Facility_Documents_Subfolder } from "./Facility_Documents.cy";
+import {
+  Malpractice_Expire,
+  View_malpractice_Expire,
+} from "./Malpractice_Expire_Search.cy";
+import {
+  Facility_Documents,
+  Facility_Documents_Subfolder,
+} from "./Facility_Documents.cy";
+import {
+  Archive_Folder,
+  Archive_Sub_Folder,
+  Document_Folder_Search,
+  Document_Sub_Folder_Search,
+  Reinstate_Folder,
+  Reinstate_Sub_Folder,
+} from "./Document_Folder.cy";
+import {
+  Provider_Document_Folder_Search,
+  Provider_Document_Sub_Folder_Search,
+} from "./Provider_Documents.cy";
 
 describe("let's Automate Icon Exchange.", function () {
   Icon_Exchange_URL(); //=============> Done
-  Icon_Admin_Login(); //=============> Done
+  // Icon_Admin_Login(); //=============> Done
+  // Provider_Signup()     //=============> Done
+  // Provider_SignIN()    //=============> Done
+  // Icon_user_Login();       //=============> Done
+  // Provider_Login();        //=============> Done
+
+  //================================================  Document > Facilities ================================================//
+
+  //Document_Folder_Search()
+  // Document_Sub_Folder_Search()
+  // Archive_Folder()
+  // Archive_Sub_Folder()
+  // Reinstate_Folder()
+  // Reinstate_Sub_Folder()
+  Provider_Document_Folder_Search()
+  Provider_Document_Sub_Folder_Search();
 
   //================================================  Credenitialing and Payor ================================================//
 
-  Credentialing_Payor();            //=============> Done
-  Credentialing_Payor_Update();     //=============> Done
-  Credenitialing_Payor_Search();     //=============> Done
-  View_Credentialing_Payor();        //=============> Done
-  Archived_Credentialing_Payor();     //=============> Done
+  // Credentialing_Payor();            //=============> Done
+  // Credentialing_Payor_Update();     //=============> Done
+  // Credenitialing_Payor_Search();     //=============> Done
+  // View_Credentialing_Payor();        //=============> Done
+  // Archived_Credentialing_Payor();     //=============> Done
 
   //================================================ Document Types ================================================//
 
- //Document_Types();           //=============> Done
-  //Document_Type_Update()       //=============> Done
-  //Document_Type_Search();       //=============> Done
+  // Add_Document_Types();           //=============> Done
+  // Document_Type_Update()       //=============> Done
+  // Document_Type_Search();       //=============> Done
   // Delete_documentType()      //=============> Done
 
-    //================================================ Expired Malpractice ================================================//
+  //================================================ Expired Malpractice ================================================//
 
   //Malpractice_Expire();           //=============> Done
   //View_malpractice_Expire()       //=============> Done
-
 
   //================================================ Facility Folders ================================================//
 
   //Facility_Documents();           //=============> Done
   //Facility_Documents_Subfolder()
+  //Provider_Genral_Docuemnt_Search()
+  //Facility_Document_Search()
+  //Rename_Facility_Folder()
+  //Rename_Facility_subFolder()
+  //Delete_Facility_Folder()
+
   
-
-
-  //================================================ Icon User and Provider Login ================================================//
-
-  // Icon_user_Login();       //=============> Done
-  // Provider_Login();        //=============> Done
+//================================================ Provider Folders ================================================//
+//Provider_Document_Search()
+Provider_Document_Folder_Search()
 
   //================================================ Provider  ================================================//
 
@@ -152,9 +192,6 @@ describe("let's Automate Icon Exchange.", function () {
   //Edit_Roles()           //=============> Done
   //Icon_Role_Search()      //=============> Done
   // Delete_Roles()        //=============> Done
-
-  // Provider_Signup()     //=============> Done
-  // Provider_SignIN()    //=============> Done
 
   //================================================ Pay Rates Management  ================================================//
 
@@ -212,12 +249,10 @@ describe("let's Automate Icon Exchange.", function () {
   // Bulk_Facility_Assignment()       //=============> Done
   // Bulk_add_provider()             //=============> Done
   // Bulk_Area_of_expertise()       //=============> Done
-
- 
 });
 
-  //           |||||||||     ||||||||    ||\\    ||  ||||||||
-  //           ||      \\    ||    ||    || \\   ||  ||
-  //           ||       ||   ||    ||    ||  \\  ||  ||/////
-  //           ||      //    ||    ||    ||   \\ ||  ||
-  //           |||||||||     ||||||||    ||    \\||  ||||||||
+//           |||||||||     ||||||||    ||\\    ||  ||||||||
+//           ||      \\    ||    ||    || \\   ||  ||
+//           ||       ||   ||    ||    ||  \\  ||  ||/////
+//           ||      //    ||    ||    ||   \\ ||  ||
+//           |||||||||     ||||||||    ||    \\||  ||||||||
