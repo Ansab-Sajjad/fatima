@@ -15,6 +15,11 @@ function Icon_Exchange_URL() {
   
      // Live Server
      // cy.visit("https://iconxchange.com/login", {failOnStatusCode: false});
+     cy.wait(2000)
+
+  cy.reload()
+  cy.wait(2000)
+
   });
   
         

@@ -112,7 +112,7 @@ function Malpractice_Search(){
     
     });
 
-    it('Search by Created By', () => {
+it('Search by Created By', () => {
         cy.get('.left-icon').click({force: true})
   cy.wait(2000)
     cy.get('#createdBy > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true}).wait(1000)

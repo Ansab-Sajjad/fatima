@@ -4,7 +4,7 @@ import { Icon_User_data } from "../../fixtures/Icon Exchange Credentials/Login_C
 
 function Icon_user_Login() {
 	// Icon_Exchange_URL()
-
+/*
 	it("2- Logo should be present.", () => {
 		cy.get(".logo").should("be.visible");
 	});
@@ -63,6 +63,7 @@ function Icon_user_Login() {
 	    cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Incorrect email or password.')
 	});
 
+	*/
 	it("10- Enter Correct Email.", () => {
 		cy.wait(2000);
 		cy

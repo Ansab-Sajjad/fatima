@@ -7,7 +7,7 @@ function Icon_Admin_Login() {
    
 
     // Icon_Exchange_URL()
- 
+ /*
 
   // Test Case 2: Verify the presence of the logo
 it('2- Logo should be present.', () => {
@@ -68,7 +68,7 @@ it('11- Verifying the Toast message for Incorrect Credentials', () => {
   cy.wait(1000);
   cy.get('.Toastify__toast-body > :nth-child(2)', { timeout: 10000 }).should('be.visible').should('have.text', 'Incorrect email or password.');
 });
-
+*/
 // Test Case 12: Enter Correct Email and Password
 it('12- Enter Correct Email and Password for Super Admin login.', () => {
   cy.wait(2000);

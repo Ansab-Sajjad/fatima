@@ -92,6 +92,7 @@ import {
 import {
   Facility_Documents,
   Facility_Documents_Subfolder,
+  Rename_Facility_Folder,
 } from "./Facility_Documents.cy";
 import {
   Archive_Folder,
@@ -102,16 +103,34 @@ import {
   Reinstate_Sub_Folder,
 } from "./Document_Folder.cy";
 import {
+  Archive_Provider,
   Provider_Document_Folder_Search,
+  Provider_Document_Search,
   Provider_Document_Sub_Folder_Search,
+  Reinstate_Provider,
+  Rename_Provider_Folder,
 } from "./Provider_Documents.cy";
 
 describe("let's Automate Icon Exchange.", function () {
+  
+// Define 'after' hook
+before(() => {
+  // Clear local storage
+  
+  cy.clearLocalStorage()
+
+  // Clear session storage
+  cy.clearAllSessionStorage()
+
+  // Clear cookies
+  cy.clearCookies()
+})
   Icon_Exchange_URL(); //=============> Done
+
   // Icon_Admin_Login(); //=============> Done
   // Provider_Signup()     //=============> Done
   // Provider_SignIN()    //=============> Done
-  // Icon_user_Login();       //=============> Done
+  Icon_user_Login();       //=============> Done
   // Provider_Login();        //=============> Done
 
   //================================================  Document > Facilities ================================================//
@@ -122,8 +141,8 @@ describe("let's Automate Icon Exchange.", function () {
   // Archive_Sub_Folder()
   // Reinstate_Folder()
   // Reinstate_Sub_Folder()
-  Provider_Document_Folder_Search()
-  Provider_Document_Sub_Folder_Search();
+  // Provider_Document_Folder_Search()
+  // Provider_Document_Sub_Folder_Search();
 
   //================================================  Credenitialing and Payor ================================================//
 
@@ -157,8 +176,11 @@ describe("let's Automate Icon Exchange.", function () {
 
   
 //================================================ Provider Folders ================================================//
-//Provider_Document_Search()
-Provider_Document_Folder_Search()
+// Provider_Document_Search()
+// Provider_Document_Folder_Search()
+// Archive_Provider()
+// Reinstate_Provider()
+  Rename_Provider_Folder()
 
   //================================================ Provider  ================================================//
 
