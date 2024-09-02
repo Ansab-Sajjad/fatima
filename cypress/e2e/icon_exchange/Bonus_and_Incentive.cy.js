@@ -38,7 +38,7 @@ it('B- Enter Target Hours Completed At date.', () => {
 
 
 it('B- Enter Bonus Date. ', () => {
-    cy.get('#bonusDate').type("09/28/2023").wait(2000)
+    cy.get('#bonusDate').click({force:true}).type("09/28/2023",{force:true}).type('{enter}').wait(2000)
 });
 
 
@@ -48,7 +48,7 @@ it('B- Enter Bonus Amount.', () => {
 
 
 it('B- Click on Save & Approve button. ', () => {
-    cy.get('[data-testid="createrecord"]').click()
+    cy.get('[data-testid="createrecord"]').click({force: true})
 });
 
 it('Verifying the Toast message', () => {

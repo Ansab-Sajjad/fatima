@@ -58,6 +58,7 @@ function checkModalTextAndClick(index) {
 
    
     it('AP -6 Enter Rate Start Date.', () => {
+        cy.wait(3000)
         cy.get('#rateStartDate').click().type("09/11/2023").type('{enter}').wait(400)
     });
 
@@ -71,7 +72,7 @@ function checkModalTextAndClick(index) {
 
 
 
-    ///////////////////////////////     Guaranteed Hours Daily  = OT After Hours Daily     ///////////////////////////////
+    ///////////////////////////////     Guaranteed Hours Daily  = OT After Hours Daily     /////////////////////////////// 
     it('Clear All values for Combinations Verifications', () => {
         cy.get('[data-testid="guaranteedHoursDaily"]').clear()
         cy.get('[data-testid="guaranteedHoursWeekly"]').clear()

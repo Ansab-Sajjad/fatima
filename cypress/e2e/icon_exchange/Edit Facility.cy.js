@@ -21,7 +21,7 @@ function edit_facility() {
 
 
 
-it('Click on View button', () => {
+it('Click on Edit button', () => {
     cy.contains('Edit Info').click({force:true}).wait(3000);
     expect(true).to.equal(true)
 
