@@ -128,10 +128,10 @@ before(() => {
   Icon_Exchange_URL(); //=============> Done
 
   Icon_Admin_Login(); //=============> Done
-  // Provider_Signup()     //=============> Done
-  // Provider_SignIN()    //=============> Done
-  // Icon_user_Login();       //=============> Done
-  // Provider_Login();        //=============> Done
+  Provider_Signup()     //=============> Done
+  Provider_SignIN()    //=============> Done
+  Icon_user_Login();       //=============> Done
+  Provider_Login();        //=============> Done
 
   //================================================  Document > Facilities ================================================//
 
