@@ -23,7 +23,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // Make sure findFiles is defined before using it
       on("task", { isFileExist, findFiles });
-      require('cypress-mochawesome-reporter/plugin')(on);
+      // require('cypress-mochawesome-reporter/plugin')(on);
     },
   },
 });

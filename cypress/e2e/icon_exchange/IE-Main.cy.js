@@ -16,6 +16,8 @@ import Add_Provider from "./Add_Provider.cy";
 import Provider_Search from "./Provider_Search.cy";
 import Delete_Provider from "./Delete_Provider.cy";
 import View_Provider from "./View_Provider.cy";
+import {ExpiredMalpracticesSearchFilters,ExpiredReappointmentsSearchFilters,ProvidersWorkHistorySearchFilters,ExpiredDocumentsSearchFilters} from './Icon_Reports.cy'
+
 import {
   Assign_Facility,
   Update_Assign_Facility,
@@ -35,6 +37,7 @@ import View_Provider_Expense from "./View_Provider_Expense.cy";
 import Edit_Provider_Expense from "./Edit_Provider_Expense.cy";
 import Provider_Expense_Search from "./Provider_Expense_Search.cy";
 import Provider_condition from "./Provider_Expense_Conditions.cy";
+
 import {
   Hours_Completion_Bonus,
   Performance_Bonus,
@@ -157,7 +160,7 @@ before(() => {
   // Add_Document_Types();           //=============> Done
   // Document_Type_Update()       //=============> Done
   // Document_Type_Search();       //=============> Done
-  Delete_documentType()      //=============> Done
+  // Delete_documentType()      //=============> Done
 
   //================================================ Expired Malpractice ================================================//
 
@@ -249,6 +252,14 @@ before(() => {
   // Refferal_Bonus()          //=============> Done
   // Incentive()              //=============> Done
   // Others_Bonus()          //=============> Done
+
+  //================================================ Reports Generation  ================================================//
+
+  ExpiredMalpracticesSearchFilters()         //=============> Done
+  ExpiredReappointmentsSearchFilters()      //=============> Done
+  ProvidersWorkHistorySearchFilters()      //=============> Done
+  ExpiredDocumentsSearchFilters()          //=============> Done
+
 
   //================================================ Timesheet Management  ================================================//
 
