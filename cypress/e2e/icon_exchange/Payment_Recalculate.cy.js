@@ -12,7 +12,8 @@ export function Payment_Recalculate(){
   
       it('Click 3 Dots.', () => {
         //   cy.get(`:nth-child() > .stickycolumn > .table-dropdown > #dropdown-basic > .icon-Vertical-Dots`).click({force:true})
-          cy.get(`:nth-child(${index}) > .stickycolumn > .table-dropdown > #dropdown-basic`).click({force:true})
+          cy.get(`:nth-child(${index}) > .stickycolumn > .table-dropdown > #dropdown-basic > p > .icon-Vertical-Dots`).click({force:true})
+          // cy.get(':nth-child(1) > .stickycolumn > .table-dropdown > #dropdown-basic > p > .icon-Vertical-Dots')
       });
   
       it('Click on Recalculate Button Button.', () => {

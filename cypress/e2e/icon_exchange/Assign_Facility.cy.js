@@ -15,7 +15,7 @@ export function Assign_Facility(){
     });
 
     it('VP-3 Click on 3 dot button.', () => {
-       cy.get(':nth-child(5) > .stickycolumn > .table-dropdown > #dropdown-basic > .icon-Vertical-Dots').click({force:true})
+        cy.get(':nth-child(1) > .stickycolumn > .table-dropdown > #dropdown-basic > p > .icon-Vertical-Dots').click({force:true})
         expect(true).to.equal(true)
     });
 
@@ -51,7 +51,7 @@ it('VP-9 Add Facility Name', () => {
    
     cy.get('#facility > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click().wait(2000)
     // cy.get('.custom-select__option:first').click().wait(100)
-    cy.get('.custom-select__option:eq(16)').click().wait(100)
+    cy.get('.custom-select__option:eq(0)').click().wait(100)
 
     expect(true).to.equal(true)
 
@@ -254,25 +254,25 @@ it('VP-22 Click on Save button.', () => {
 
 export function Update_Assign_Facility(){
 
-    // it('VP-1 Click on provider.', () => {
-    //     cy.get('[data-testid="submenu-providers-listing"] > :nth-child(2)').click()
-    //     cy.wait(2000)
-    //     expect(true).to.equal(true)
+    it('VP-1 Click on provider.', () => {
+        cy.get('[data-testid="submenu-providers-listing"] > :nth-child(2)').click()
+        cy.wait(2000)
+        expect(true).to.equal(true)
     
-    // });
+    });
     
-    // it('VP-2 Scroll to the right side.', () => {
-    //     cy.get('.tableresponsive').scrollTo("right").wait(2000)
-    //     expect(true).to.equal(true)
-    // });
+    it('VP-2 Scroll to the right side.', () => {
+        cy.get('.tableresponsive').scrollTo("right").wait(2000)
+        expect(true).to.equal(true)
+    });
 
-    // it('VP-3 Click on 3 dot button.', () => {
-    //    cy.get(':nth-child(4) > .stickycolumn > .table-dropdown > #dropdown-basic > .icon-Vertical-Dots').click({force:true})
-    //     expect(true).to.equal(true)
-    // });
+    it('VP-3 Click on 3 dot button.', () => {
+        cy.get(':nth-child(1) > .stickycolumn > .table-dropdown > #dropdown-basic > p > .icon-Vertical-Dots').click({force:true})
+        expect(true).to.equal(true)
+    });
 
     it('VP-4 Click on View Provider button', () => {
-        cy.get('[data-testid="basic-info-tab"]').click()
+        cy.get('[data-testid="view-provider"]').click()
         cy.wait(4000)
         expect(true).to.equal(true)
     });

@@ -4,7 +4,7 @@ function Facility_Search() {
 
     it('F1- Click on the Facilities.', () => {
         cy.wait(3000)
-        cy.get('[data-testid="mainmenu-facilities"] > .ml-4').click().wait(3000)
+        cy.get('[data-testid="mainmenu-facilities"]').click().wait(3000)
         expect(true).to.equal(true)
     });
 

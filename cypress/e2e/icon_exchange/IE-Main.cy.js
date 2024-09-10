@@ -128,10 +128,10 @@ before(() => {
   Icon_Exchange_URL(); //=============> Done
 
   Icon_Admin_Login(); //=============> Done
-  Provider_Signup()     //=============> Done
-  Provider_SignIN()    //=============> Done
-  Icon_user_Login();       //=============> Done
-  Provider_Login();        //=============> Done
+  // Provider_Signup()     //=============> Done
+  // Provider_SignIN()    //=============> Done
+  // Icon_user_Login();       //=============> Done
+  // Provider_Login();        //=============> Done
 
   //================================================  Document > Facilities ================================================//
 
@@ -157,7 +157,7 @@ before(() => {
   // Add_Document_Types();           //=============> Done
   // Document_Type_Update()       //=============> Done
   // Document_Type_Search();       //=============> Done
-  // Delete_documentType()      //=============> Done
+  Delete_documentType()      //=============> Done
 
   //================================================ Expired Malpractice ================================================//
 
@@ -190,8 +190,8 @@ before(() => {
 
   //================================================ Facility Assignment  ================================================//
 
-  //Assign_Facility();
-  //Update_Assign_Facility();
+  // Assign_Facility();
+  // Update_Assign_Facility();
   //View_Assign_Facility();                //=============> Done
   // Update_Provider_Provider_profile()  //=============> Done
 
@@ -204,20 +204,20 @@ before(() => {
 
   //================================================ User Management  ================================================//
 
-  //Icon_Users()            //=============> Done
+  // Icon_Users()            //=============> Done
   // Update_Icon_user()       //=============> Done
   // Icon_Users_Search()    //=============> Done
 
   //================================================ Roles Management  ================================================//
 
-  //Create_Icon_Roles()      //=============> Done
-  //Edit_Roles()           //=============> Done
-  //Icon_Role_Search()      //=============> Done
+  // Create_Icon_Roles()      //=============> Done
+  // Edit_Roles()            //=============> Done
+  // Icon_Role_Search()     //=============> Done
   // Delete_Roles()        //=============> Done
 
   //================================================ Pay Rates Management  ================================================//
 
-  //Add_Pay_Rates()           //=============> Done
+  // Add_Pay_Rates()           //=============> Done
   // Pay_Rate_Search()        //=============> Done
   // Pay_Rate_View()         //=============> Done
   // Edit_Pay_Rate()        //=============> Done
@@ -226,7 +226,7 @@ before(() => {
   //================================================ Malpractice Management  ================================================//
 
   // Add_Malpractice()         //=============> Done
-  //Malpractice_Search()     //=============> Done
+  // Malpractice_Search()     //=============> Done
   // Update_Malpractice();   //=============> Done
 
   //================================================ Expense Management  ================================================//

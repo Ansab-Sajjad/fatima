@@ -249,7 +249,7 @@ function admin_Expense_Condition(){
                 
     cy.get('.scroll-table').scrollTo('right',{ duration: 2000 }).wait(2000)
 
-    cy.get(':nth-child(1) > .stickycolumn > .table-dropdown > #dropdown-basic > .icon-Vertical-Dots').click({force:true}).wait(2000)
+    cy.get(':nth-child(1) > .stickycolumn > .table-dropdown > #dropdown-basic > p > .icon-Vertical-Dots').click({force:true}).wait(2000)
 
     cy.get('[data-testid="view-expense"]').click({force: true}).wait(4000)
 
