@@ -24,9 +24,12 @@ it('Add provider name and select assigned facility.', () => {
    // Define a function to check the modal body text and click accordingly
 function checkModalTextAndClick(index) {
     // Click on the custom-select__option with the current index
-    cy.get('.custom-select__input-container').click(2000);
-    cy.get(`.custom-select__option:eq(${index})`).click().wait(1000);
+    cy.get('.custom-select__input-container').click(2000).wait(3000);
+    cy.get(`.custom-select__option:eq(${index})`).click().wait(3000);
   
+    //cy.get('tbody > :nth-child(1) > :nth-child(1)').click().
+    // cy.get(`.custom-select__option:eq(${index})`).click().wait(5000); 
+
     // Check if .modal-body contains the text "No result found"
     cy.get('.modal-body').then(($modalBody) => {
       if ($modalBody.text().includes('No result found')) {
@@ -36,7 +39,7 @@ function checkModalTextAndClick(index) {
         checkModalTextAndClick(index + 1);
       } else {
     
-        cy.get('tbody > tr > :nth-child(1)').click(); // Example: Click on .modal-list-assignments
+        cy.get('tbody > :nth-child(1) > :nth-child(1)').click(); // Example: Click on .modal-list-assignments
         cy.wait(1000);
         return;
         // Continue checking with the next index (recursive call)
@@ -49,7 +52,6 @@ function checkModalTextAndClick(index) {
   
     
 });
-
 
 
 

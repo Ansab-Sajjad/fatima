@@ -220,8 +220,8 @@ before(() => {
 
   //================================================ Pay Rates Management  ================================================//
 
-  // Add_Pay_Rates()           //=============> Done
-  // Pay_Rate_Search()        //=============> Done
+   //Add_Pay_Rates()             //=============> Done
+   Pay_Rate_Search()        //=============> Done
   // Pay_Rate_View()         //=============> Done
   // Edit_Pay_Rate()        //=============> Done
   // Delete_Pay_Rate()     //=============> Done
@@ -255,10 +255,10 @@ before(() => {
 
   //================================================ Reports Generation  ================================================//
 
-  ExpiredMalpracticesSearchFilters()         //=============> Done
-  ExpiredReappointmentsSearchFilters()      //=============> Done
-  ProvidersWorkHistorySearchFilters()      //=============> Done
-  ExpiredDocumentsSearchFilters()          //=============> Done
+ // ExpiredMalpracticesSearchFilters()         //=============> Done
+  //ExpiredReappointmentsSearchFilters()      //=============> Done
+  //ProvidersWorkHistorySearchFilters()      //=============> Done
+  //ExpiredDocumentsSearchFilters()          //=============> Done
 
 
   //================================================ Timesheet Management  ================================================//

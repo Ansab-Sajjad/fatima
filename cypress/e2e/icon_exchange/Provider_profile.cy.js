@@ -1,6 +1,8 @@
 import Random_Textt from "./Random_Text";
 
 export function Provider_profile() {
+
+//====================================== Basic Info ======================================
   
     it('Click on Basic Info.', () => {
         cy.wait(5000)
@@ -13,13 +15,59 @@ it('Upload profile image.', () => {
     // cy.get('[name="img"]').click({force:true})
     const filepath11 = "a11.jpg"
     cy.get('[name="img"]').attachFile(filepath11)
-    cy.wait(5000)
-
-   
+    cy.wait(5000)  
 });
-        
+      
+it('Enter First Name.', () => {
+    cy.get('[name="firstName"]').click({force:true}).clear().type("Jones")
+});
+
+it('Enter Middle Name.', () => {
+    cy.get('[name="middleName"]').click({force:true}).clear().type("Jones")
+});
+
+it('Enter lastName Name.', () => {
+    cy.get('[name="lastName"]').click({force:true}).clear().type("Doe")
+});
+
+it('Enter Maiden Name.', () => {
+    cy.get('[name="maidenName"]').click({force:true}).clear().type("Jones")
+});
+
 it('Enter Date of birth.', () => {
-    cy.get('#birthDate').click({force:true}).type("01/06/1998")
+    cy.get('#birthDate').click({force:true}).clear().type("01/06/1998")
+});
+
+it('Enter Place of Birth.', () => {
+    cy.get('[name="birthPlace"]').click({force:true}).clear().type("California")
+});
+
+it('Enter SS#.', () => {
+    cy.get('[name="ssNumber"]').click({force:true}).clear().type("121122")
+});
+
+it('Enter NPI Number.', () => {
+    cy.get('[name="npiCredentials.number"]').click({force:true}).clear().type("21212")
+});
+
+it('Enter NPI Username.', () => {
+    cy.get('[name="npiCredentials.userName"]').click({force:true}).clear().type("jones123")
+});
+
+it('Enter NPI Password.', () => {
+    cy.get('[name="npiCredentials.password"]').click({force:true}).clear().type("12345678")
+});
+
+it('Enter CAQH Number.', () => {
+    cy.get('[name="caqhCredentials.number"]').click({force:true}).clear().type("12345678")
+});
+
+it('Enter CAQH Username.', () => {
+    cy.get('[name="caqhCredentials.userName"]').click({force:true}).clear().type("12345678")
+});
+
+it('Enter CAQH Password.', () => {
+    cy.get('[name="caqhCredentials.password"]').click({force:true}).clear().type("12345678")
 });
 
 it('Click on Save and continue.', () => {
@@ -61,6 +109,10 @@ it('Enter Postal code.', () => {
     cy.get('#postalCodeMand').click({force:true}).clear().type(Random_Textt())
 });
 
+it('Enter Street Address.', () => {
+    cy.get('#streetMand').click({force:true}).clear().type(Random_Textt())
+});
+
 it('Enter Distance.', () => {
     cy.get('#maxClientDistanceMand').click({force:true}).clear().type("50")
 });
@@ -91,7 +143,7 @@ it('Enter Contact relationship.', () => {
     cy.get(':nth-child(2) > .mt-24 > .row > .col-md-12 > .form-group > .form-controls > input').click({force:true}).clear().type("xyz")
 });
 
-it('Enter Cotact Name.', () => {
+it('Enter Contact Name.', () => {
     cy.get(':nth-child(2) > .mt-24 > .row > :nth-child(1) > .form-group > .form-controls > input').clear().type(Random_Textt())
 });
 
